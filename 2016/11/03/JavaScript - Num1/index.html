@@ -6,16 +6,16 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <title>JavaScript - Num1 | 安静的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="#简介JavaScript 是世界上最流行的编程语言。因为你在电脑、手机、平板上浏览的所有的网页，以及无数基于HTML5的手机App，交互逻辑都是由JavaScript驱动的。JavaScript 插入 HTML 页面后，可由所有的现代浏览器执行。">
+  <meta name="description" content="简介JavaScript 是世界上最流行的编程语言。因为你在电脑、手机、平板上浏览的所有的网页，以及无数基于HTML5的手机App，交互逻辑都是由JavaScript驱动的。JavaScript 插入 HTML 页面后，可由所有的现代浏览器执行。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="JavaScript - Num1">
 <meta property="og:url" content="http://yoursite.com/2016/11/03/JavaScript - Num1/index.html">
 <meta property="og:site_name" content="安静的博客">
-<meta property="og:description" content="#简介JavaScript 是世界上最流行的编程语言。因为你在电脑、手机、平板上浏览的所有的网页，以及无数基于HTML5的手机App，交互逻辑都是由JavaScript驱动的。JavaScript 插入 HTML 页面后，可由所有的现代浏览器执行。">
-<meta property="og:updated_time" content="2016-11-03T09:16:05.000Z">
+<meta property="og:description" content="简介JavaScript 是世界上最流行的编程语言。因为你在电脑、手机、平板上浏览的所有的网页，以及无数基于HTML5的手机App，交互逻辑都是由JavaScript驱动的。JavaScript 插入 HTML 页面后，可由所有的现代浏览器执行。">
+<meta property="og:updated_time" content="2016-11-03T09:18:47.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="JavaScript - Num1">
-<meta name="twitter:description" content="#简介JavaScript 是世界上最流行的编程语言。因为你在电脑、手机、平板上浏览的所有的网页，以及无数基于HTML5的手机App，交互逻辑都是由JavaScript驱动的。JavaScript 插入 HTML 页面后，可由所有的现代浏览器执行。">
+<meta name="twitter:description" content="简介JavaScript 是世界上最流行的编程语言。因为你在电脑、手机、平板上浏览的所有的网页，以及无数基于HTML5的手机App，交互逻辑都是由JavaScript驱动的。JavaScript 插入 HTML 页面后，可由所有的现代浏览器执行。">
   
     <link rel="alternative" href="/atom.xml" title="安静的博客" type="application/atom+xml">
   
@@ -168,7 +168,7 @@
   
     <div class="article-meta">
       <a href="/2016/11/03/JavaScript - Num1/" class="article-date">
-  	<time datetime="2016-11-03T09:16:05.000Z" itemprop="datePublished">2016-11-03</time>
+  	<time datetime="2016-11-03T09:18:47.000Z" itemprop="datePublished">2016-11-03</time>
 </a>
     </div>
   
@@ -201,8 +201,8 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>#简介<br>JavaScript 是世界上最流行的编程语言。<br>因为你在电脑、手机、平板上浏览的所有的网页，以及无数基于HTML5的手机App，交互逻辑都是由JavaScript驱动的。JavaScript 插入 HTML 页面后，可由所有的现代浏览器执行。<br><a id="more"></a></p>
-<p>#快速入门<br>JavaScript代码可以直接嵌在网页的任何地方，不过通常我们都把JavaScript代码放到<code>&lt;head&gt;</code>中：</p>
+        <h1 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h1><p>JavaScript 是世界上最流行的编程语言。<br>因为你在电脑、手机、平板上浏览的所有的网页，以及无数基于HTML5的手机App，交互逻辑都是由JavaScript驱动的。JavaScript 插入 HTML 页面后，可由所有的现代浏览器执行。<br><a id="more"></a></p>
+<h1 id="快速入门"><a href="#快速入门" class="headerlink" title="快速入门"></a>快速入门</h1><p>JavaScript代码可以直接嵌在网页的任何地方，不过通常我们都把JavaScript代码放到<code>&lt;head&gt;</code>中：</p>
 <pre><code>&lt;script&gt;
     alert(&apos;hello world&apos;);
 &lt;/script&gt;
@@ -213,9 +213,8 @@
 &lt;/head&gt;
 </code></pre><p>这样abc.js文件就会被浏览器执行；<br>把JavaScript代码放入一个单独的.js文件中更利于维护代码，并且多个页面可以各自引用同一份.js文件。<br>值得注意的是：在同一个页面中可以引入多个.js文件，浏览器按照顺序依次执行（jQuery.js之前不能使用jQuery的语法）。</p>
 <p>有些时候你会看到<code>&lt;script&gt;</code>标签还设置了一个type属性：<code>&lt;script type=&quot;text/javascript&quot;&gt;...&lt;/script&gt;</code>,其实这是没有必要的，因为默认的type就是JavaScript代码。</p>
-<p>#语法<br>JavaScript的语法和Java语言类似，每个语句以“;”结束，语句块用“{…}”，JavaScript并不强制要求在每个语句的结尾加“;”，浏览器中负责执行JavaScript代码的引擎会自动在每个语句的结尾补上“;”。<br>请注意，JavaScript严格区分大小写，如果弄错了大小写，程序将报错或者运行不正常。</p>
-<p>#数据类型</p>
-<h3 id="Number"><a href="#Number" class="headerlink" title="Number"></a>Number</h3><p>JavaScript不区分整数和浮点数，统一用Number表示，下面是两个比较特别的Number类型：<br>NaN;（NaN表示Not a Number，当无法计算结果时用NaN表示）<br>Infinity;（Infinity表示无限大，当数值超过了JavaScript的Number所能表示的最大值时，就表示为Infinity）<br>2 / 0; // Infinity<br>0 / 0; // NaN</p>
+<h1 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h1><p>JavaScript的语法和Java语言类似，每个语句以“;”结束，语句块用“{…}”，JavaScript并不强制要求在每个语句的结尾加“;”，浏览器中负责执行JavaScript代码的引擎会自动在每个语句的结尾补上“;”。<br>请注意，JavaScript严格区分大小写，如果弄错了大小写，程序将报错或者运行不正常。</p>
+<h1 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h1><h3 id="Number"><a href="#Number" class="headerlink" title="Number"></a>Number</h3><p>JavaScript不区分整数和浮点数，统一用Number表示，下面是两个比较特别的Number类型：<br>NaN;（NaN表示Not a Number，当无法计算结果时用NaN表示）<br>Infinity;（Infinity表示无限大，当数值超过了JavaScript的Number所能表示的最大值时，就表示为Infinity）<br>2 / 0; // Infinity<br>0 / 0; // NaN</p>
 <h3 id="字符串"><a href="#字符串" class="headerlink" title="字符串"></a>字符串</h3><p>字符串是以单引号’或双引号”括起来的任意文本；</p>
 <h3 id="布尔值"><a href="#布尔值" class="headerlink" title="布尔值"></a>布尔值</h3><p>布尔值和布尔代数的表示完全一致，一个布尔值只有true、false两种值；</p>
 <h3 id="比较运算符"><a href="#比较运算符" class="headerlink" title="比较运算符"></a>比较运算符</h3><p>JavaScript允许对任意数据类型做比较：<br>false == 0; // true<br>false === 0; // false<br>要特别注意相等运算符：<br>第一种是==比较，它会自动转换数据类型再比较，很多时候，会得到非常诡异的结果；<br>第二种是===比较，它不会自动转换数据类型，如果数据类型不一致，返回false，如果一致，再比较。</p>
