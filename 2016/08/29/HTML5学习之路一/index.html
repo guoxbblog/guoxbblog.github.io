@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=6.6.0" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.6.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=6.6.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=6.6.0">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=6.6.0" color="#222">
+
+
+
+
+
+
+
+
+
+<script id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '6.6.0',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta name="description" content="学习一门新的编程语言，是一个循序渐进的过程！">
+<meta name="keywords" content="HTML5">
+<meta property="og:type" content="article">
+<meta property="og:title" content="HTML5成长之路一">
+<meta property="og:url" content="http://guoxb.com/2016/08/29/HTML5学习之路一/index.html">
+<meta property="og:site_name" content="安静的博客">
+<meta property="og:description" content="学习一门新的编程语言，是一个循序渐进的过程！">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2016-08-29T13:39:28.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="HTML5成长之路一">
+<meta name="twitter:description" content="学习一门新的编程语言，是一个循序渐进的过程！">
+
+
+
+
+
+
+  <link rel="canonical" href="http://guoxb.com/2016/08/29/HTML5学习之路一/">
+
+
+
+<script id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>HTML5成长之路一 | 安静的博客</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style>
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion .logo-line-before i { left: initial; }
+    .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope="" itemtype="http://schema.org/WebPage" lang="default">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">安静的博客</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="Toggle navigation bar">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>Home</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>Archives</a>
+
+  </li>
+
+      
+      
+    </ul>
+  
+
+  
+    
+
+  
+
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://guoxb.com/2016/08/29/HTML5学习之路一/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Xiaobo Guo">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="安静的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">HTML5成长之路一
+
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2016-08-29 21:36:44 / Modified: 21:39:28" itemprop="dateCreated datePublished" datetime="2016-08-29T21:36:44+08:00">2016-08-29</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>学习一门新的编程语言，是一个循序渐进的过程！<br><a id="more"></a></p>
+<h3 id="一、常用标签"><a href="#一、常用标签" class="headerlink" title="一、常用标签"></a>一、常用标签</h3><figure class="highlight plain"><figcaption><span>表示是一个标题```</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">```&lt;p&gt; 段落标签</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><figcaption><span>水平线标签```</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">```&lt;br/&gt; 换行标签</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><figcaption><span>下标```</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">```&lt;sup&gt; 上标</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><figcaption><span>原样标签： 原样标签会保留空格和换行符。```</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">```&lt;ol&gt; &lt;li&gt; 有序的列表标签、</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><figcaption><span><li> 无序的列表标签。```</li></span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">```项目列表标签(dl dt dd)</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">```块标签&lt;div&gt; div标签的内容会独立占一行。</span><br></pre></td></tr></table></figure>
+<h3 id="二、实体标签"><a href="#二、实体标签" class="headerlink" title="二、实体标签"></a>二、实体标签</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">空格 &amp;nbsp;</span><br><span class="line">小于号 &amp;lt;</span><br><span class="line">大于号 &amp;gt;</span><br><span class="line">人民币 &amp;yen;</span><br><span class="line">版权 &amp;copy;</span><br><span class="line">商标 &amp;reg;</span><br></pre></td></tr></table></figure>
+<h3 id="三、媒体标签"><a href="#三、媒体标签" class="headerlink" title="三、媒体标签"></a>三、媒体标签</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;embed&gt;&lt;/embed&gt;</span><br><span class="line">hidden ： 设置隐藏插件是否隐藏。</span><br><span class="line">src ：用于指定音乐的路径</span><br><span class="line">&lt;embed src=&quot;1.mp3&quot; &gt;&lt;/embed&gt;</span><br><span class="line">&lt;marquee&gt; 飘动标签direction : 指定飘动的方向</span><br><span class="line">scrollamount : 指定飘动的速度。</span><br><span class="line">loop :指定飘动的次数</span><br></pre></td></tr></table></figure>
+<h3 id="四、超链接标签"><a href="#四、超链接标签" class="headerlink" title="四、超链接标签"></a>四、超链接标签</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">&lt;a&gt; 超链接标签</span><br><span class="line">a标签常用的属性：</span><br><span class="line">href : 用于指定链接的资源</span><br><span class="line">target: 设置打开新资源的目标。</span><br><span class="line">_Blank 在独立的窗口上打开新资源</span><br><span class="line">_self 在当前窗口打开新资源</span><br><span class="line">file: file协议（文件协议）这种协议主要是用于搜索本地机器的资源文件的。</span><br><span class="line">格式：</span><br><span class="line">file:///f:/美女/1.jpg</span><br><span class="line">邮件 的协议： mailTo迅雷的协议： thunder</span><br><span class="line">超链接标签的作用：</span><br><span class="line">1. 可以用于链接资源。</span><br><span class="line">2. 锚点点位.</span><br><span class="line">1. 首先编写一个锚点 锚点的格式： &lt;a name=&quot;锚点名字&quot;&gt; 数据&lt;/a&gt;</span><br><span class="line">2. 使用a标签 的herf属性连接到锚点出。 href=”#锚点的名字“</span><br></pre></td></tr></table></figure>
+<h3 id="五、图片标签"><a href="#五、图片标签" class="headerlink" title="五、图片标签"></a>五、图片标签</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">img标签常用的属性:</span><br><span class="line">width： 设置图片宽度</span><br><span class="line">height 设置图片高度</span><br><span class="line">alt: 如果图片资源无法找到，那么就显示对应的文字对图片进行说明。</span><br></pre></td></tr></table></figure>
+<h3 id="六、表格标签"><a href="#六、表格标签" class="headerlink" title="六、表格标签"></a>六、表格标签</h3><p>表格使用到的标签：</p>
+<figure class="highlight plain"><figcaption><span>表格</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">&lt;tr&gt; 行</span><br><span class="line">&lt;td&gt; 单元格</span><br><span class="line">&lt;th&gt; 表头 默认的样式是居中，加粗。</span><br><span class="line">&lt;caption&gt; 表格的标题</span><br><span class="line">表格常用的属性：</span><br><span class="line">border 设置表格的边框</span><br><span class="line">width : 设置表格的宽度</span><br><span class="line">height: 设置表格的高度的。</span><br><span class="line">colspan: 设置单元格占据指定的列数。</span><br><span class="line">rowspan : 设置单元格占据指定的行数。</span><br><span class="line">&lt;thead&gt; 标签用于组合 HTML 表格的表头内容。</span><br><span class="line">&lt;thead&gt; 元素应该与&lt;tbody&gt;和&lt;tfoot&gt;元素结合起来使用，用来规定表格的各个部分（表头、主体、页脚）。</span><br><span class="line">通过使用这些元素，使浏览器有能力支持独立于表格表头和表格页脚的表格主体滚动。当包含多个页面的长的表格被打印时，表格的表头和页脚可被打印在包含表格数据的每张页面上。</span><br><span class="line">&lt;thead&gt; 标签必须被用在以下情境中：作为 &lt;table&gt; 元素的子元素，出现在 &lt;caption&gt;、&lt;colgroup&gt; 元素之后，&lt;tbody&gt;、 &lt;tfoot&gt; 和 &lt;tr&gt; 元素之前。</span><br></pre></td></tr></table></figure>
+<h3 id="七、表单标签"><a href="#七、表单标签" class="headerlink" title="七、表单标签"></a>七、表单标签</h3><p><code>表单标签： 表单标签的作用是用于提交数据给服务器的表单标签的根标签是&lt;form&gt;标签常用的属性action: 该属性是用于指定提交数据的地址。method： 指定表单的提交方式。get : 默认使用的提交方式。 提交的数据会显示在地址栏上。post ： 提交的数据不会显示在地址栏上。注意： 表单项的数据如果需要提交到服务器上面，那么表单项必须要有name的属性值</code></p>
+
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/HTML5/" rel="tag"># HTML5</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/08/24/Podspec-上传个人代码至Cocoapod官方库/" rel="next" title="Podspec-上传个人代码至Cocoapod官方库">
+                <i class="fa fa-chevron-left"></i> Podspec-上传个人代码至Cocoapod官方库
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/11/03/JavaScript - Num1/" rel="prev" title="JavaScript - Num1">
+                JavaScript - Num1 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+  </div>
+
+
+          </div>
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">Xiaobo Guo</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">17</span>
+                    <span class="site-state-item-name">posts</span>
+                  </a>
+                </div>
+              
+
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">5</span>
+                    <span class="site-state-item-name">tags</span>
+                  
+                </div>
+              
+            </nav>
+          
+
+          
+
+          
+
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </div>
+
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#一、常用标签"><span class="nav-number">1.</span> <span class="nav-text">一、常用标签</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#二、实体标签"><span class="nav-number">2.</span> <span class="nav-text">二、实体标签</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#三、媒体标签"><span class="nav-number">3.</span> <span class="nav-text">三、媒体标签</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#四、超链接标签"><span class="nav-number">4.</span> <span class="nav-text">四、超链接标签</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#五、图片标签"><span class="nav-number">5.</span> <span class="nav-text">五、图片标签</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#六、表格标签"><span class="nav-number">6.</span> <span class="nav-text">六、表格标签</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#七、表单标签"><span class="nav-number">7.</span> <span class="nav-text">七、表单标签</span></a></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Xiaobo Guo</span>
+
+  
+
+  
+</div>
+
+
+  <div class="powered-by">Powered by <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> v3.8.0</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> v6.6.0</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+    
+
+    
+  </div>
+
+  
+
+<script>
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+
+  
+
+
+  <script src="/js/src/utils.js?v=6.6.0"></script>
+
+  <script src="/js/src/motion.js?v=6.6.0"></script>
+
+
+
+  
+  
+
+  
+  <script src="/js/src/scrollspy.js?v=6.6.0"></script>
+<script src="/js/src/post-details.js?v=6.6.0"></script>
+
+
+
+  
+
+
+  <script src="/js/src/bootstrap.js?v=6.6.0"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

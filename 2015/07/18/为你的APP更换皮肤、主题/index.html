@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=6.6.0" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.6.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=6.6.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=6.6.0">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=6.6.0" color="#222">
+
+
+
+
+
+
+
+
+
+<script id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '6.6.0',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta name="description" content="最近在项目里面有个模块涉及到主题设置，在网上学习了很多篇文章，这篇文章主要谈一下个人的做法。 大致的步骤如下：  整个应用依赖于一个主题管理器，主题管理器根据当前的主题配置，加载不同主题文件夹下的主题 在需要更换主题的地方创建统一通知【我的做法是：例如更换所有UILabel的字体颜色，创建UILabel基类，所有涉及主题切换的label都继承UILabel基类，在基类中创建通知】 切换主题，发送统">
+<meta name="keywords" content="iOS">
+<meta property="og:type" content="article">
+<meta property="og:title" content="为你的APP更换皮肤、主题">
+<meta property="og:url" content="http://guoxb.com/2015/07/18/为你的APP更换皮肤、主题/index.html">
+<meta property="og:site_name" content="安静的博客">
+<meta property="og:description" content="最近在项目里面有个模块涉及到主题设置，在网上学习了很多篇文章，这篇文章主要谈一下个人的做法。 大致的步骤如下：  整个应用依赖于一个主题管理器，主题管理器根据当前的主题配置，加载不同主题文件夹下的主题 在需要更换主题的地方创建统一通知【我的做法是：例如更换所有UILabel的字体颜色，创建UILabel基类，所有涉及主题切换的label都继承UILabel基类，在基类中创建通知】 切换主题，发送统">
+<meta property="og:locale" content="default">
+<meta property="og:image" content="http://img.haoyunbang.cn/app/2016-08-23/3849E26F-78C0-4B9A-BEFF-5C0666D6C1DB/509qdl0t.jpg@280w">
+<meta property="og:updated_time" content="2016-08-23T04:08:34.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="为你的APP更换皮肤、主题">
+<meta name="twitter:description" content="最近在项目里面有个模块涉及到主题设置，在网上学习了很多篇文章，这篇文章主要谈一下个人的做法。 大致的步骤如下：  整个应用依赖于一个主题管理器，主题管理器根据当前的主题配置，加载不同主题文件夹下的主题 在需要更换主题的地方创建统一通知【我的做法是：例如更换所有UILabel的字体颜色，创建UILabel基类，所有涉及主题切换的label都继承UILabel基类，在基类中创建通知】 切换主题，发送统">
+<meta name="twitter:image" content="http://img.haoyunbang.cn/app/2016-08-23/3849E26F-78C0-4B9A-BEFF-5C0666D6C1DB/509qdl0t.jpg@280w">
+
+
+
+
+
+
+  <link rel="canonical" href="http://guoxb.com/2015/07/18/为你的APP更换皮肤、主题/">
+
+
+
+<script id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>为你的APP更换皮肤、主题 | 安静的博客</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style>
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion .logo-line-before i { left: initial; }
+    .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope="" itemtype="http://schema.org/WebPage" lang="default">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">安静的博客</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="Toggle navigation bar">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>Home</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>Archives</a>
+
+  </li>
+
+      
+      
+    </ul>
+  
+
+  
+    
+
+  
+
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://guoxb.com/2015/07/18/为你的APP更换皮肤、主题/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Xiaobo Guo">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="安静的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">为你的APP更换皮肤、主题
+
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2015-07-18 11:33:20" itemprop="dateCreated datePublished" datetime="2015-07-18T11:33:20+08:00">2015-07-18</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2016-08-23 12:08:34" itemprop="dateModified" datetime="2016-08-23T12:08:34+08:00">2016-08-23</time>
+              
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>最近在项目里面有个模块涉及到主题设置，在网上学习了很多篇文章，这篇文章主要谈一下个人的做法。</p>
+<p>大致的步骤如下：</p>
+<ul>
+<li>整个应用依赖于一个主题管理器，主题管理器根据当前的主题配置，加载不同主题文件夹下的主题</li>
+<li>在需要更换主题的地方创建统一通知【我的做法是：例如更换所有UILabel的字体颜色，创建UILabel基类，所有涉及主题切换的label都继承UILabel基类，在基类中创建通知】</li>
+<li>切换主题，发送统一通知更换主题<a id="more"></a>
+<h3 id="1-主题管理器"><a href="#1-主题管理器" class="headerlink" title="1.主题管理器"></a>1.主题管理器</h3><img src="http://img.haoyunbang.cn/app/2016-08-23/3849E26F-78C0-4B9A-BEFF-5C0666D6C1DB/509qdl0t.jpg@280w" alt="theme_manager"></li>
+</ul>
+<p>这是主题管理器文件夹下所有涉及主题切换的基类，ThemeManager为管理器</p>
+<p>ThemeManager被构建为是单例，在实例初始化的时候，同时实例化主题的相关配置：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">+ (ThemeManager*)sharedInstance&#123;</span><br><span class="line">    static dispatch_once_t onceToken;</span><br><span class="line">    dispatch_once(&amp;onceToken, ^&#123;</span><br><span class="line">        themeManager = [[self alloc] init];</span><br><span class="line">    &#125;);</span><br><span class="line">    return themeManager;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">/**</span><br><span class="line"> ** 初始化</span><br><span class="line"> **/</span><br><span class="line">-(instancetype)init&#123;</span><br><span class="line">    if (self = [super init]) &#123;</span><br><span class="line">    	//设置默认主题</span><br><span class="line">        [self makeDefaultTheme];</span><br><span class="line">    &#125;</span><br><span class="line">    return self;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="2-主题设置的主要代码"><a href="#2-主题设置的主要代码" class="headerlink" title="2.主题设置的主要代码"></a>2.主题设置的主要代码</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line">/**</span><br><span class="line"> ** 设置主题</span><br><span class="line"> **/</span><br><span class="line">-(void)makeDefaultTheme&#123;</span><br><span class="line">    /**</span><br><span class="line">     ** 创建Theme文件夹在Cache文件夹下，用于存放主题文件夹</span><br><span class="line">     **/</span><br><span class="line">    NSString *themePath = [[NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) objectAtIndex:0] stringByAppendingPathComponent:@&quot;Theme&quot;];</span><br><span class="line">    //文件管理器</span><br><span class="line">    NSFileManager *fileManager = [NSFileManager defaultManager];</span><br><span class="line">    if (![fileManager fileExistsAtPath:themePath]) &#123;</span><br><span class="line">        [fileManager createDirectoryAtPath:themePath withIntermediateDirectories:YES attributes:nil error:nil];</span><br><span class="line">    &#125;</span><br><span class="line">    NSLog(@&quot;themePath = %@&quot;,themePath);</span><br><span class="line">    //主题基本路径</span><br><span class="line">    self.themeBasePath = themePath;</span><br><span class="line">    /**</span><br><span class="line">     ** 设置主题</span><br><span class="line">     **/</span><br><span class="line">    NSString *themeName = [[Config Instance] getThemeName];</span><br><span class="line">//    themeName = @&quot;ThemeDefault&quot;;</span><br><span class="line">    NSString *plistPath = @&quot;&quot;;</span><br><span class="line">    if ([themeName isEqualToString:@&quot;ThemeDefault&quot;]) &#123;</span><br><span class="line">        plistPath = [[NSBundle mainBundle] pathForResource:@&quot;ThemeDefault&quot; ofType:@&quot;plist&quot;];</span><br><span class="line">    &#125;else&#123;</span><br><span class="line">        plistPath = [[themePath stringByAppendingPathComponent:[NSString stringWithFormat:@&quot;skin_%@&quot;,[[Config Instance] getThemeId]]] stringByAppendingPathComponent:@&quot;theme.plist&quot;];</span><br><span class="line">    &#125;</span><br><span class="line">    NSDictionary *dictionary = [[NSDictionary alloc] initWithContentsOfFile:plistPath];</span><br><span class="line">    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];</span><br><span class="line">    [userDefaults setObject:dictionary forKey:@&quot;kAllColorDict&quot;];</span><br><span class="line">    [userDefaults synchronize];</span><br><span class="line"></span><br><span class="line">    /**</span><br><span class="line">     ** 初始化本类属性</span><br><span class="line">     **/</span><br><span class="line">    //主题名称</span><br><span class="line">    self.themeName = themeName;</span><br><span class="line">    //主题路径</span><br><span class="line">    self.themePath = [themePath stringByAppendingPathComponent:[NSString stringWithFormat:@&quot;skin_%@&quot;,[[Config Instance] getThemeId]]];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>执行这段代码，会有一个关于主题配置的.plish文件存在本地，之后发送通知设置主题即可。。。</p>
+<h3 id="3-附上基类代码"><a href="#3-附上基类代码" class="headerlink" title="3.附上基类代码"></a>3.附上基类代码</h3><p><code>ThemeLabel.m文件</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line">//1.alloc init之后执行该方法，注册通知设置默认主题皮肤</span><br><span class="line">-(void)makeThemeLabelColor:(ThemeLabelColor *)color&#123;</span><br><span class="line">    self.labelColor = color;</span><br><span class="line">    [self loadLabelColor];</span><br><span class="line">    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(themeNotification:) name:kThemeDidChangeNotification object:nil];</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//2.更换主题会执行该方法，改变主题</span><br><span class="line">-(void)themeNotification:(NSNotification *)notification&#123;</span><br><span class="line">    [self loadLabelColor];</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//3.更换主题操作</span><br><span class="line">-(void)loadLabelColor&#123;</span><br><span class="line">    //size</span><br><span class="line">    if (self.labelColor == ThemeLabelSize) &#123;</span><br><span class="line">        self.frame = CGRectMake(0, 0, SCREENWIDTH, 0);</span><br><span class="line">        return;</span><br><span class="line">    &#125;</span><br><span class="line">    //header</span><br><span class="line">    if (self.labelColor == ThemeLabelHeaderBgColor) &#123;</span><br><span class="line">        self.backgroundColor = kMyThemeColor(kBgColor);</span><br><span class="line">        return;</span><br><span class="line">    &#125;</span><br><span class="line">    //color</span><br><span class="line">    UIColor *textColor = [UIColor whiteColor];</span><br><span class="line">    if (self.labelColor == ThemeLabelTopTitleColor) &#123;</span><br><span class="line">        textColor = kMyThemeColor(kTopTitileColor);</span><br><span class="line">    &#125;else if (self.labelColor == ThemeLabelCreditErrorColor)&#123;</span><br><span class="line">        textColor = kMyThemeColor(kCreditErrorColor);</span><br><span class="line">    &#125;</span><br><span class="line">    self.textColor = textColor;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>【ps：以上是我在项目中更换主题皮肤的简单操作，需求比较简单，更换颜色就行】</p>
+
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/iOS/" rel="tag"># iOS</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2015/04/17/CocoaPods使用步骤/" rel="next" title="CocoaPods使用步骤">
+                <i class="fa fa-chevron-left"></i> CocoaPods使用步骤
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/02/09/问题:技巧大整理/" rel="prev" title="问题/技巧大整理">
+                问题/技巧大整理 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+  </div>
+
+
+          </div>
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">Xiaobo Guo</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">17</span>
+                    <span class="site-state-item-name">posts</span>
+                  </a>
+                </div>
+              
+
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">5</span>
+                    <span class="site-state-item-name">tags</span>
+                  
+                </div>
+              
+            </nav>
+          
+
+          
+
+          
+
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </div>
+
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-主题管理器"><span class="nav-number">1.</span> <span class="nav-text">1.主题管理器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-主题设置的主要代码"><span class="nav-number">2.</span> <span class="nav-text">2.主题设置的主要代码</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-附上基类代码"><span class="nav-number">3.</span> <span class="nav-text">3.附上基类代码</span></a></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Xiaobo Guo</span>
+
+  
+
+  
+</div>
+
+
+  <div class="powered-by">Powered by <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> v3.8.0</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> v6.6.0</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+    
+
+    
+  </div>
+
+  
+
+<script>
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+
+  
+
+
+  <script src="/js/src/utils.js?v=6.6.0"></script>
+
+  <script src="/js/src/motion.js?v=6.6.0"></script>
+
+
+
+  
+  
+
+  
+  <script src="/js/src/scrollspy.js?v=6.6.0"></script>
+<script src="/js/src/post-details.js?v=6.6.0"></script>
+
+
+
+  
+
+
+  <script src="/js/src/bootstrap.js?v=6.6.0"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
