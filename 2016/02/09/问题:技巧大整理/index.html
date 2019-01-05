@@ -24,6 +24,10 @@
 
 
 
+  
+  
+  <link rel="stylesheet" href="/lib/needsharebutton/needsharebutton.css">
+
 
 
 
@@ -113,7 +117,7 @@
 <meta property="og:site_name" content="夜雨寒">
 <meta property="og:description" content="最近一直忙于项目的开发，以下是开发项目中一些小问题和小技巧，一直写在笔记里，没时间整理，今天有空作个整理…">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-12-26T13:47:30.989Z">
+<meta property="og:updated_time" content="2018-12-26T13:47:30.988Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="问题&#x2F;技巧大整理">
 <meta name="twitter:description" content="最近一直忙于项目的开发，以下是开发项目中一些小问题和小技巧，一直写在笔记里，没时间整理，今天有空作个整理…">
@@ -142,6 +146,16 @@
 
 
 
+
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?5eb6048ddc0fe5e6ca3213619967c429";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
 
 
 
@@ -518,10 +532,47 @@
     
 
     
+      <div>
+        <div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
+    <img id="wechat_subscriber_qcode" src="/images/wechat-qcode.png" alt="夜雨寒 wechat" style="width: 200px; max-width: 100%;">
+    <div>微信公众号</div>
+</div>
+
+      </div>
+    
 
     
       
     
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>坚持原创技术分享，您的支持将鼓励我继续创作！</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wechatpay.png" alt="夜雨寒 微信支付">
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/alipay.png" alt="夜雨寒 支付宝">
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
     
 
     
@@ -536,6 +587,26 @@
       
 
       
+      
+        <div class="post-widgets">
+        
+
+        
+
+        
+          
+          <div class="social_share">
+            
+            
+               <div id="needsharebutton-postbottom">
+                 <span class="btn">
+                    <i class="fa fa-share-alt" aria-hidden="true"></i>
+                 </span>
+               </div>
+            
+          </div>
+        
+        </div>
       
       
 
@@ -693,6 +764,54 @@
           
 
           
+            <div class="links-of-author motion-element">
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://github.com/gxbxgithub" title="GitHub &rarr; https://github.com/gxbxgithub" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="mailto:gxbxemail@163.com" title="E-Mail &rarr; mailto:gxbxemail@163.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://weibo.com/p/1005055104640336" title="微博 &rarr; https://weibo.com/p/1005055104640336" rel="noopener" target="_blank"><i class="fa fa-fw fa-weibo"></i>微博</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://www.zhihu.com/people/carybob" title="知乎 &rarr; https://www.zhihu.com/people/carybob" rel="noopener" target="_blank"><i class="fa fa-fw fa-book"></i>知乎</a>
+                </span>
+              
+            </div>
+          
 
           
 
@@ -737,7 +856,7 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
   <span class="with-love" id="animate">
     <i class="fa fa-user"></i>
   </span>
@@ -785,9 +904,24 @@
     
 
     
+      <div id="needsharebutton-float">
+        <span class="btn">
+          <i class="fa fa-share-alt" aria-hidden="true"></i>
+        </span>
+      </div>
+    
 
     
 
+    
+
+    
+      <div>
+        <div id="wechat_subscriber_custom" style="display: block; width: 200px; text-align: center; position: fixed; top: 50%; right: 0; margin-top: -100px;">
+    <img src="/images/wechat-qcode.png" alt="夜雨寒 wechat" style="width: 100%;">
+    <div>微信公众号</div>
+</div>
+      </div>
     
   </div>
 
@@ -1225,6 +1359,39 @@
   
 
   
+  
+  
+  <script src="/lib/needsharebutton/needsharebutton.js"></script>
+
+  <script>
+    
+      pbOptions = {};
+      
+          pbOptions.iconStyle = "default";
+      
+          pbOptions.boxForm = "horizontal";
+      
+          pbOptions.position = "bottomCenter";
+      
+          pbOptions.networks = "Weibo,Wechat,QQZone,Douban,Twitter,Facebook";
+      
+      new needShareButton('#needsharebutton-postbottom', pbOptions);
+    
+    
+      flOptions = {};
+      
+          flOptions.iconStyle = "default";
+      
+          flOptions.boxForm = "vertical";
+      
+          flOptions.position = "middleRight";
+      
+          flOptions.networks = "Weibo,Wechat,QQZone,Douban,Twitter,Facebook";
+      
+      new needShareButton('#needsharebutton-float', flOptions);
+    
+  </script>
+
   
 
   
