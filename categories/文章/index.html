@@ -669,7 +669,12 @@
 
     
       <div>
-        <div id="wechat_subscriber_custom" style="display: block; width: 200px; text-align: center; position: fixed; top: 50%; right: 0; margin-top: -100px;">
+        <style>
+    @media (max-width: 990px) {
+        #wechat_subscriber_custom {display: none !important;}
+    }
+</style>
+<div id="wechat_subscriber_custom" style="display: block; width: 200px; text-align: center; position: fixed; top: 50%; right: 0; margin-top: -100px;">
     <img src="/images/wechat-qcode.png" alt="夜雨寒 wechat" style="width: 100%;">
     <div>微信公众号</div>
 </div>
