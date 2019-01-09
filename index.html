@@ -440,7 +440,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-01-09 10:30:05" itemprop="dateModified" datetime="2019-01-09T10:30:05+08:00">2019-01-09</time>
+                <time title="修改时间：2019-01-09 21:58:12" itemprop="dateModified" datetime="2019-01-09T21:58:12+08:00">2019-01-09</time>
               
             
           </span>
@@ -492,32 +492,17 @@
 
       
         
+          <blockquote>
+<p>iOS开发中，出现各种错误，针对这些错误，这篇文章给出了正确的解决方案，并总结下来帮助遇到困难的朋友。文章将由<a href="https://www.jianshu.com/u/46ae5ab6420e" target="_blank" rel="noopener">夜雨寒</a>维护并持续更新，有不对的地方，可以在下面评论区提出来~<br></p></blockquote>
+          <!--noindex-->
           
-            <blockquote>
-<p>iOS开发中，出现各种错误，针对这些错误，这篇文章给出了正确的解决方案，并总结下来帮助遇到困难的朋友。文章将由<a href="https://www.jianshu.com/u/46ae5ab6420e" target="_blank" rel="noopener">夜雨寒</a>维护并持续更新，有不对的地方，可以在下面评论区提出来~</p>
-</blockquote>
-<h4 id="1-查询异常"><a href="#1-查询异常" class="headerlink" title="1.查询异常"></a>1.查询异常</h4><ul>
-<li><p><code>&quot;directory not found for option &#39;-L/…&quot;</code></p>
-<blockquote>
-<p>表示查询 Library 的时候出现异常<br> 解决方法：<br> 依次 Project -&gt; targets -&gt; Build Setting -&gt; Library Search Paths删除里面的路径</p>
-</blockquote>
-</li>
-<li><p><code>&quot;directory not found for option &#39;-F/...&quot;</code></p>
-<blockquote>
-<p>表示查询 Framework 的时候出现异常<br> 解决方法：<br> 依次 Project -&gt; targets -&gt; Build Setting -&gt; Framework Search Paths删除里面的路径</p>
-</blockquote>
-</li>
-</ul>
-<h4 id="2-library-not-found-for-lstdc-6-0-9"><a href="#2-library-not-found-for-lstdc-6-0-9" class="headerlink" title="2.library not found for -lstdc++.6.0.9"></a>2.library not found for -lstdc++.6.0.9</h4><blockquote>
-<p>更新Xcode 10.1之后，项目运行报这个错误：<br>library not found for -lstdc++.6.0.9<br>意思是找不到 libstdc++.6.0.9，由于iOS12移除了libstdc++.6.0.9，取消了6.0.9的支持</p>
-</blockquote>
-<p>解决办法：</p>
-<ol>
-<li>打开Build Phases -&gt; Link Binary With Libraries，删除libstdc++.6.0.9依赖，如果项目中有用到c++6.0.9的，可以添加Libc++.tdb；<br>如果依赖c++6.0.9的SDK是第三方SDK等待第三方更新解决</li>
-<li>在Build Phases -&gt; Build Settings 找到Other Linker Flags，将里面的-l “stdc++.6.0.9”删除</li>
-</ol>
-
-          
+            <div class="post-button text-center">
+              <a class="btn" href="/2019/01/07/iOS错误总结/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+         
+          <!--/noindex-->
         
       
     </div>
