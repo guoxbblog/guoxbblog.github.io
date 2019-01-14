@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://guoxb.com/"/>
-  <updated>2019-01-09T13:58:12.415Z</updated>
+  <updated>2019-01-14T14:47:49.521Z</updated>
   <id>http://guoxb.com/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>webpack学习</title>
+    <link href="http://guoxb.com/2019/01/11/webpack%E5%AD%A6%E4%B9%A0/"/>
+    <id>http://guoxb.com/2019/01/11/webpack学习/</id>
+    <published>2019-01-11T14:02:05.000Z</published>
+    <updated>2019-01-14T14:47:49.521Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;/2019/01/11/webpack学习/webpack.png&quot; alt=&quot;webpack&quot;&gt;&lt;br&gt;webpack是&lt;em&gt;静态模块打包器&lt;/em&gt;，它有一个模块的概念，webpack将所有文件都看作是模块，将这些模块分类并配置一定的规则，按照这些规则进行处理的过程，就是webpack的工作过程。&lt;br&gt;webpack具体是如何工作的，在项目中该如何去使用，是这篇文章要跟大家分享的，我会将学到的内容及时分享在这里~&lt;br&gt;这篇文章，基于webpack 4.x版本，与webpack 3有一些不同之处，学习webpack3的也可以作为参考~&lt;br&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Node.js" scheme="http://guoxb.com/categories/Node-js/"/>
+    
+    
+      <category term="webpack" scheme="http://guoxb.com/tags/webpack/"/>
+    
+  </entry>
   
   <entry>
     <title>iOS开发总结 - Xcode常见错误</title>
