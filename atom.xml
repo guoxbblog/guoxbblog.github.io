@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://guoxb.com/"/>
-  <updated>2019-01-14T14:47:49.521Z</updated>
+  <updated>2019-01-24T03:29:44.646Z</updated>
   <id>http://guoxb.com/</id>
   
   <author>
@@ -18,19 +18,21 @@
   
   <entry>
     <title>webpack学习</title>
-    <link href="http://guoxb.com/2019/01/11/webpack%E5%AD%A6%E4%B9%A0/"/>
-    <id>http://guoxb.com/2019/01/11/webpack学习/</id>
+    <link href="http://guoxb.com/2019/01/11/Nodejs/webpack%E5%AD%A6%E4%B9%A0/"/>
+    <id>http://guoxb.com/2019/01/11/Nodejs/webpack学习/</id>
     <published>2019-01-11T14:02:05.000Z</published>
-    <updated>2019-01-14T14:47:49.521Z</updated>
+    <updated>2019-01-24T03:29:44.646Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;&lt;img src=&quot;/2019/01/11/webpack学习/webpack.png&quot; alt=&quot;webpack&quot;&gt;&lt;br&gt;webpack是&lt;em&gt;静态模块打包器&lt;/em&gt;，它有一个模块的概念，webpack将所有文件都看作是模块，将这些模块分类并配置一定的规则，按照这些规则进行处理的过程，就是webpack的工作过程。&lt;br&gt;webpack具体是如何工作的，在项目中该如何去使用，是这篇文章要跟大家分享的，我会将学到的内容及时分享在这里~&lt;br&gt;这篇文章，基于webpack 4.x版本，与webpack 3有一些不同之处，学习webpack3的也可以作为参考~&lt;br&gt;&lt;/p&gt;
+      &lt;p&gt;&lt;img src=&quot;/2019/01/11/Nodejs/webpack学习/webpack.png&quot; alt=&quot;webpack&quot;&gt;&lt;br&gt;webpack是&lt;em&gt;静态模块打包器&lt;/em&gt;，它有一个模块的概念，webpack将所有文件都看作是模块，将这些模块分类并配置一定的规则，按照这些规则进行处理的过程，就是webpack的工作过程。&lt;br&gt;webpack具体是如何工作的，在项目中该如何去使用，是这篇文章要跟大家分享的，我会将学到的内容及时分享在这里~&lt;br&gt;这篇文章，基于webpack 4.x版本，与webpack 3有一些不同之处，学习webpack3的也可以作为参考~&lt;br&gt;&lt;/p&gt;
     
     </summary>
     
       <category term="Node.js" scheme="http://guoxb.com/categories/Node-js/"/>
     
+    
+      <category term="前端框架" scheme="http://guoxb.com/tags/%E5%89%8D%E7%AB%AF%E6%A1%86%E6%9E%B6/"/>
     
       <category term="webpack" scheme="http://guoxb.com/tags/webpack/"/>
     
@@ -38,10 +40,10 @@
   
   <entry>
     <title>iOS开发总结 - Xcode常见错误</title>
-    <link href="http://guoxb.com/2019/01/07/iOS%E9%94%99%E8%AF%AF%E6%80%BB%E7%BB%93/"/>
-    <id>http://guoxb.com/2019/01/07/iOS错误总结/</id>
+    <link href="http://guoxb.com/2019/01/07/iOS/iOS%E9%94%99%E8%AF%AF%E6%80%BB%E7%BB%93/"/>
+    <id>http://guoxb.com/2019/01/07/iOS/iOS错误总结/</id>
     <published>2019-01-07T04:18:36.000Z</published>
-    <updated>2019-01-09T13:58:12.415Z</updated>
+    <updated>2019-01-24T03:25:16.238Z</updated>
     
     <summary type="html">
     
@@ -53,16 +55,16 @@
       <category term="iOS" scheme="http://guoxb.com/categories/iOS/"/>
     
     
-      <category term="iOS" scheme="http://guoxb.com/tags/iOS/"/>
+      <category term="Xcode" scheme="http://guoxb.com/tags/Xcode/"/>
     
   </entry>
   
   <entry>
     <title>Gulp与Grunt</title>
-    <link href="http://guoxb.com/2017/09/20/Gulp%E4%B8%8EGrunt/"/>
-    <id>http://guoxb.com/2017/09/20/Gulp与Grunt/</id>
+    <link href="http://guoxb.com/2017/09/20/Nodejs/Gulp%E4%B8%8EGrunt/"/>
+    <id>http://guoxb.com/2017/09/20/Nodejs/Gulp与Grunt/</id>
     <published>2017-09-20T12:30:33.000Z</published>
-    <updated>2019-01-06T16:00:00.184Z</updated>
+    <updated>2019-01-24T03:29:16.018Z</updated>
     
     <summary type="html">
     
@@ -75,14 +77,16 @@
     
       <category term="前端框架" scheme="http://guoxb.com/tags/%E5%89%8D%E7%AB%AF%E6%A1%86%E6%9E%B6/"/>
     
+      <category term="Gulp-Grunt" scheme="http://guoxb.com/tags/Gulp-Grunt/"/>
+    
   </entry>
   
   <entry>
     <title>Javascript 模块化编程-require.js 的用法</title>
-    <link href="http://guoxb.com/2017/08/28/JavaScript%E6%A8%A1%E5%9D%97%E5%8C%96%E7%BC%96%E7%A8%8B%EF%BC%9Arequire.js%E7%9A%84%E7%94%A8%E6%B3%95/"/>
-    <id>http://guoxb.com/2017/08/28/JavaScript模块化编程：require.js的用法/</id>
+    <link href="http://guoxb.com/2017/08/28/Javascript/JavaScript%E6%A8%A1%E5%9D%97%E5%8C%96%E7%BC%96%E7%A8%8B%EF%BC%9Arequire.js%E7%9A%84%E7%94%A8%E6%B3%95/"/>
+    <id>http://guoxb.com/2017/08/28/Javascript/JavaScript模块化编程：require.js的用法/</id>
     <published>2017-08-28T03:34:03.000Z</published>
-    <updated>2018-12-26T13:46:35.365Z</updated>
+    <updated>2019-01-24T03:28:19.978Z</updated>
     
     <summary type="html">
     
@@ -93,16 +97,16 @@
       <category term="JavaScript" scheme="http://guoxb.com/categories/JavaScript/"/>
     
     
-      <category term="JavaScript" scheme="http://guoxb.com/tags/JavaScript/"/>
+      <category term="require.js" scheme="http://guoxb.com/tags/require-js/"/>
     
   </entry>
   
   <entry>
     <title>gulp-项目构建利器</title>
-    <link href="http://guoxb.com/2017/08/17/gulp-%E9%A1%B9%E7%9B%AE%E6%9E%84%E5%BB%BA%E5%88%A9%E5%99%A8/"/>
-    <id>http://guoxb.com/2017/08/17/gulp-项目构建利器/</id>
+    <link href="http://guoxb.com/2017/08/17/Nodejs/gulp-%E9%A1%B9%E7%9B%AE%E6%9E%84%E5%BB%BA%E5%88%A9%E5%99%A8/"/>
+    <id>http://guoxb.com/2017/08/17/Nodejs/gulp-项目构建利器/</id>
     <published>2017-08-17T12:30:33.000Z</published>
-    <updated>2018-12-26T13:45:22.026Z</updated>
+    <updated>2019-01-24T03:29:02.609Z</updated>
     
     <summary type="html">
     
@@ -116,14 +120,16 @@
     
       <category term="前端框架" scheme="http://guoxb.com/tags/%E5%89%8D%E7%AB%AF%E6%A1%86%E6%9E%B6/"/>
     
+      <category term="gulp" scheme="http://guoxb.com/tags/gulp/"/>
+    
   </entry>
   
   <entry>
     <title>JavaScript插件 - 计时器</title>
-    <link href="http://guoxb.com/2017/08/02/JavaScript%E6%8F%92%E4%BB%B6-%E8%AE%A1%E6%97%B6%E5%99%A8/"/>
-    <id>http://guoxb.com/2017/08/02/JavaScript插件-计时器/</id>
+    <link href="http://guoxb.com/2017/08/02/Javascript/JavaScript%E6%8F%92%E4%BB%B6-%E8%AE%A1%E6%97%B6%E5%99%A8/"/>
+    <id>http://guoxb.com/2017/08/02/Javascript/JavaScript插件-计时器/</id>
     <published>2017-08-02T12:50:08.000Z</published>
-    <updated>2018-12-26T13:46:31.802Z</updated>
+    <updated>2019-01-24T03:27:57.874Z</updated>
     
     <summary type="html">
     
@@ -134,16 +140,18 @@
       <category term="JavaScript" scheme="http://guoxb.com/categories/JavaScript/"/>
     
     
-      <category term="JavaScript" scheme="http://guoxb.com/tags/JavaScript/"/>
+      <category term="js计时器" scheme="http://guoxb.com/tags/js%E8%AE%A1%E6%97%B6%E5%99%A8/"/>
+    
+      <category term="js插件" scheme="http://guoxb.com/tags/js%E6%8F%92%E4%BB%B6/"/>
     
   </entry>
   
   <entry>
     <title>时间管理-四象限法则</title>
-    <link href="http://guoxb.com/2017/08/02/%E6%97%B6%E9%97%B4%E7%AE%A1%E7%90%86-%E5%9B%9B%E8%B1%A1%E9%99%90%E6%B3%95%E5%88%99/"/>
-    <id>http://guoxb.com/2017/08/02/时间管理-四象限法则/</id>
+    <link href="http://guoxb.com/2017/08/02/Article/%E6%97%B6%E9%97%B4%E7%AE%A1%E7%90%86-%E5%9B%9B%E8%B1%A1%E9%99%90%E6%B3%95%E5%88%99/"/>
+    <id>http://guoxb.com/2017/08/02/Article/时间管理-四象限法则/</id>
     <published>2017-08-02T11:09:23.000Z</published>
-    <updated>2018-12-26T13:47:22.723Z</updated>
+    <updated>2019-01-24T03:22:01.004Z</updated>
     
     <summary type="html">
     
@@ -155,16 +163,16 @@
       <category term="文章" scheme="http://guoxb.com/categories/%E6%96%87%E7%AB%A0/"/>
     
     
-      <category term="文章" scheme="http://guoxb.com/tags/%E6%96%87%E7%AB%A0/"/>
+      <category term="时间管理" scheme="http://guoxb.com/tags/%E6%97%B6%E9%97%B4%E7%AE%A1%E7%90%86/"/>
     
   </entry>
   
   <entry>
     <title>Vue 2.0项目研究（一）</title>
-    <link href="http://guoxb.com/2017/07/11/Vue2.0%E9%A1%B9%E7%9B%AE%E7%A0%94%E7%A9%B6%EF%BC%88%E4%B8%80%EF%BC%89/"/>
-    <id>http://guoxb.com/2017/07/11/Vue2.0项目研究（一）/</id>
+    <link href="http://guoxb.com/2017/07/11/Vue/Vue2.0%E9%A1%B9%E7%9B%AE%E7%A0%94%E7%A9%B6%EF%BC%88%E4%B8%80%EF%BC%89/"/>
+    <id>http://guoxb.com/2017/07/11/Vue/Vue2.0项目研究（一）/</id>
     <published>2017-07-11T13:50:20.000Z</published>
-    <updated>2018-12-26T13:47:01.689Z</updated>
+    <updated>2019-01-24T03:30:01.705Z</updated>
     
     <summary type="html">
     
@@ -177,14 +185,16 @@
     
       <category term="前端框架" scheme="http://guoxb.com/tags/%E5%89%8D%E7%AB%AF%E6%A1%86%E6%9E%B6/"/>
     
+      <category term="Vue" scheme="http://guoxb.com/tags/Vue/"/>
+    
   </entry>
   
   <entry>
     <title>Vue 2.0 （一）</title>
-    <link href="http://guoxb.com/2017/06/21/Vue%202.0%EF%BC%88%E4%B8%80%EF%BC%89/"/>
-    <id>http://guoxb.com/2017/06/21/Vue 2.0（一）/</id>
+    <link href="http://guoxb.com/2017/06/21/Vue/Vue%202.0%EF%BC%88%E4%B8%80%EF%BC%89/"/>
+    <id>http://guoxb.com/2017/06/21/Vue/Vue 2.0（一）/</id>
     <published>2017-06-21T13:01:20.000Z</published>
-    <updated>2018-12-26T13:46:55.412Z</updated>
+    <updated>2019-01-24T03:29:54.161Z</updated>
     
     <summary type="html">
     
@@ -197,14 +207,16 @@
     
       <category term="前端框架" scheme="http://guoxb.com/tags/%E5%89%8D%E7%AB%AF%E6%A1%86%E6%9E%B6/"/>
     
+      <category term="Vue" scheme="http://guoxb.com/tags/Vue/"/>
+    
   </entry>
   
   <entry>
     <title>JavaScript立即执行函数 (function(){...})(jQuery)</title>
-    <link href="http://guoxb.com/2017/06/06/JavaScript%E7%AB%8B%E5%8D%B3%E6%89%A7%E8%A1%8C%E5%87%BD%E6%95%B0/"/>
-    <id>http://guoxb.com/2017/06/06/JavaScript立即执行函数/</id>
+    <link href="http://guoxb.com/2017/06/06/Javascript/JavaScript%E7%AB%8B%E5%8D%B3%E6%89%A7%E8%A1%8C%E5%87%BD%E6%95%B0/"/>
+    <id>http://guoxb.com/2017/06/06/Javascript/JavaScript立即执行函数/</id>
     <published>2017-06-06T13:32:20.000Z</published>
-    <updated>2018-12-26T13:46:40.252Z</updated>
+    <updated>2019-01-24T03:28:34.709Z</updated>
     
     <summary type="html">
     
@@ -215,16 +227,16 @@
       <category term="JavaScript" scheme="http://guoxb.com/categories/JavaScript/"/>
     
     
-      <category term="JavaScript" scheme="http://guoxb.com/tags/JavaScript/"/>
+      <category term="函数" scheme="http://guoxb.com/tags/%E5%87%BD%E6%95%B0/"/>
     
   </entry>
   
   <entry>
     <title>HTML5 拓展jquery scroll事件，支持scroll start 和 scroll stop</title>
-    <link href="http://guoxb.com/2017/03/21/HTML5%20jquery%20scroll/"/>
-    <id>http://guoxb.com/2017/03/21/HTML5 jquery scroll/</id>
+    <link href="http://guoxb.com/2017/03/21/HTML5/HTML5%20jquery%20scroll/"/>
+    <id>http://guoxb.com/2017/03/21/HTML5/HTML5 jquery scroll/</id>
     <published>2017-03-21T06:49:44.000Z</published>
-    <updated>2018-12-26T13:45:52.819Z</updated>
+    <updated>2019-01-24T03:23:00.295Z</updated>
     
     <summary type="html">
     
@@ -235,16 +247,16 @@
       <category term="HTML5" scheme="http://guoxb.com/categories/HTML5/"/>
     
     
-      <category term="HTML5" scheme="http://guoxb.com/tags/HTML5/"/>
+      <category term="jquery-scroll" scheme="http://guoxb.com/tags/jquery-scroll/"/>
     
   </entry>
   
   <entry>
     <title>JavaScript - Num2</title>
-    <link href="http://guoxb.com/2016/11/14/JavaScript%20-%20Num2/"/>
-    <id>http://guoxb.com/2016/11/14/JavaScript - Num2/</id>
+    <link href="http://guoxb.com/2016/11/14/Javascript/JavaScript%20-%20Num2/"/>
+    <id>http://guoxb.com/2016/11/14/Javascript/JavaScript - Num2/</id>
     <published>2016-11-14T00:20:47.000Z</published>
-    <updated>2018-12-26T13:46:27.525Z</updated>
+    <updated>2019-01-24T03:27:33.846Z</updated>
     
     <summary type="html">
     
@@ -255,16 +267,16 @@
       <category term="JavaScript" scheme="http://guoxb.com/categories/JavaScript/"/>
     
     
-      <category term="JavaScript" scheme="http://guoxb.com/tags/JavaScript/"/>
+      <category term="JavaScript学习" scheme="http://guoxb.com/tags/JavaScript%E5%AD%A6%E4%B9%A0/"/>
     
   </entry>
   
   <entry>
     <title>JavaScript - Num1</title>
-    <link href="http://guoxb.com/2016/11/03/JavaScript%20-%20Num1/"/>
-    <id>http://guoxb.com/2016/11/03/JavaScript - Num1/</id>
+    <link href="http://guoxb.com/2016/11/03/Javascript/JavaScript%20-%20Num1/"/>
+    <id>http://guoxb.com/2016/11/03/Javascript/JavaScript - Num1/</id>
     <published>2016-11-03T13:52:56.000Z</published>
-    <updated>2018-12-26T13:46:19.809Z</updated>
+    <updated>2019-01-24T03:27:30.300Z</updated>
     
     <summary type="html">
     
@@ -275,16 +287,16 @@
       <category term="JavaScript" scheme="http://guoxb.com/categories/JavaScript/"/>
     
     
-      <category term="JavaScript" scheme="http://guoxb.com/tags/JavaScript/"/>
+      <category term="JavaScript学习" scheme="http://guoxb.com/tags/JavaScript%E5%AD%A6%E4%B9%A0/"/>
     
   </entry>
   
   <entry>
     <title>HTML5成长之路一</title>
-    <link href="http://guoxb.com/2016/08/29/HTML5%E5%AD%A6%E4%B9%A0%E4%B9%8B%E8%B7%AF%E4%B8%80/"/>
-    <id>http://guoxb.com/2016/08/29/HTML5学习之路一/</id>
+    <link href="http://guoxb.com/2016/08/29/HTML5/HTML5%E5%AD%A6%E4%B9%A0%E4%B9%8B%E8%B7%AF%E4%B8%80/"/>
+    <id>http://guoxb.com/2016/08/29/HTML5/HTML5学习之路一/</id>
     <published>2016-08-29T13:36:44.000Z</published>
-    <updated>2018-12-26T13:45:56.325Z</updated>
+    <updated>2019-01-24T03:23:12.269Z</updated>
     
     <summary type="html">
     
@@ -295,16 +307,16 @@
       <category term="HTML5" scheme="http://guoxb.com/categories/HTML5/"/>
     
     
-      <category term="HTML5" scheme="http://guoxb.com/tags/HTML5/"/>
+      <category term="HTML5学习" scheme="http://guoxb.com/tags/HTML5%E5%AD%A6%E4%B9%A0/"/>
     
   </entry>
   
   <entry>
-    <title>Podspec-上传个人代码至Cocoapod官方库</title>
-    <link href="http://guoxb.com/2016/08/24/Podspec-%E4%B8%8A%E4%BC%A0%E4%B8%AA%E4%BA%BA%E4%BB%A3%E7%A0%81%E8%87%B3Cocoapod%E5%AE%98%E6%96%B9%E5%BA%93/"/>
-    <id>http://guoxb.com/2016/08/24/Podspec-上传个人代码至Cocoapod官方库/</id>
+    <title>Podspec-上传个人代码至CocoaPods官方库</title>
+    <link href="http://guoxb.com/2016/08/24/iOS/Podspec-%E4%B8%8A%E4%BC%A0%E4%B8%AA%E4%BA%BA%E4%BB%A3%E7%A0%81%E8%87%B3Cocoapod%E5%AE%98%E6%96%B9%E5%BA%93/"/>
+    <id>http://guoxb.com/2016/08/24/iOS/Podspec-上传个人代码至Cocoapod官方库/</id>
     <published>2016-08-24T04:06:01.000Z</published>
-    <updated>2018-12-26T13:46:46.979Z</updated>
+    <updated>2019-01-24T03:26:00.965Z</updated>
     
     <summary type="html">
     
@@ -315,16 +327,18 @@
       <category term="iOS" scheme="http://guoxb.com/categories/iOS/"/>
     
     
-      <category term="iOS" scheme="http://guoxb.com/tags/iOS/"/>
+      <category term="CocoaPods" scheme="http://guoxb.com/tags/CocoaPods/"/>
+    
+      <category term="Podspec" scheme="http://guoxb.com/tags/Podspec/"/>
     
   </entry>
   
   <entry>
     <title>iOS9开放的新API--Spotlight使用指南</title>
-    <link href="http://guoxb.com/2016/05/04/ios9%E5%BC%80%E6%94%BE%E7%9A%84%E6%96%B0api--spotlight%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/"/>
-    <id>http://guoxb.com/2016/05/04/ios9开放的新api--spotlight使用指南/</id>
+    <link href="http://guoxb.com/2016/05/04/iOS/ios9%E5%BC%80%E6%94%BE%E7%9A%84%E6%96%B0api--spotlight%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/"/>
+    <id>http://guoxb.com/2016/05/04/iOS/ios9开放的新api--spotlight使用指南/</id>
     <published>2016-05-04T03:01:59.000Z</published>
-    <updated>2018-12-26T13:46:01.421Z</updated>
+    <updated>2019-01-24T03:23:37.410Z</updated>
     
     <summary type="html">
     
@@ -335,16 +349,16 @@
       <category term="iOS" scheme="http://guoxb.com/categories/iOS/"/>
     
     
-      <category term="iOS" scheme="http://guoxb.com/tags/iOS/"/>
+      <category term="Spotlight" scheme="http://guoxb.com/tags/Spotlight/"/>
     
   </entry>
   
   <entry>
     <title>问题/技巧大整理</title>
-    <link href="http://guoxb.com/2016/02/09/%E9%97%AE%E9%A2%98:%E6%8A%80%E5%B7%A7%E5%A4%A7%E6%95%B4%E7%90%86/"/>
-    <id>http://guoxb.com/2016/02/09/问题:技巧大整理/</id>
+    <link href="http://guoxb.com/2016/02/09/iOS/%E9%97%AE%E9%A2%98:%E6%8A%80%E5%B7%A7%E5%A4%A7%E6%95%B4%E7%90%86/"/>
+    <id>http://guoxb.com/2016/02/09/iOS/问题:技巧大整理/</id>
     <published>2016-02-09T12:00:42.000Z</published>
-    <updated>2018-12-26T13:47:30.989Z</updated>
+    <updated>2019-01-24T03:27:16.347Z</updated>
     
     <summary type="html">
     
@@ -355,16 +369,16 @@
       <category term="iOS" scheme="http://guoxb.com/categories/iOS/"/>
     
     
-      <category term="iOS" scheme="http://guoxb.com/tags/iOS/"/>
+      <category term="iOS问题-技巧" scheme="http://guoxb.com/tags/iOS%E9%97%AE%E9%A2%98-%E6%8A%80%E5%B7%A7/"/>
     
   </entry>
   
   <entry>
     <title>为你的APP更换皮肤、主题</title>
-    <link href="http://guoxb.com/2015/07/18/%E4%B8%BA%E4%BD%A0%E7%9A%84APP%E6%9B%B4%E6%8D%A2%E7%9A%AE%E8%82%A4%E3%80%81%E4%B8%BB%E9%A2%98/"/>
-    <id>http://guoxb.com/2015/07/18/为你的APP更换皮肤、主题/</id>
+    <link href="http://guoxb.com/2015/07/18/iOS/%E4%B8%BA%E4%BD%A0%E7%9A%84APP%E6%9B%B4%E6%8D%A2%E7%9A%AE%E8%82%A4%E3%80%81%E4%B8%BB%E9%A2%98/"/>
+    <id>http://guoxb.com/2015/07/18/iOS/为你的APP更换皮肤、主题/</id>
     <published>2015-07-18T03:33:20.000Z</published>
-    <updated>2018-12-26T13:47:12.065Z</updated>
+    <updated>2019-01-24T03:26:54.148Z</updated>
     
     <summary type="html">
     
@@ -380,16 +394,16 @@
       <category term="iOS" scheme="http://guoxb.com/categories/iOS/"/>
     
     
-      <category term="iOS" scheme="http://guoxb.com/tags/iOS/"/>
+      <category term="iOS-App皮肤" scheme="http://guoxb.com/tags/iOS-App%E7%9A%AE%E8%82%A4/"/>
     
   </entry>
   
   <entry>
     <title>CocoaPods使用步骤</title>
-    <link href="http://guoxb.com/2015/04/17/CocoaPods%E4%BD%BF%E7%94%A8%E6%AD%A5%E9%AA%A4/"/>
-    <id>http://guoxb.com/2015/04/17/CocoaPods使用步骤/</id>
+    <link href="http://guoxb.com/2015/04/17/iOS/CocoaPods%E4%BD%BF%E7%94%A8%E6%AD%A5%E9%AA%A4/"/>
+    <id>http://guoxb.com/2015/04/17/iOS/CocoaPods使用步骤/</id>
     <published>2015-04-17T01:31:17.000Z</published>
-    <updated>2018-12-26T13:44:40.923Z</updated>
+    <updated>2019-01-24T03:23:28.061Z</updated>
     
     <summary type="html">
     
@@ -400,7 +414,7 @@
       <category term="iOS" scheme="http://guoxb.com/categories/iOS/"/>
     
     
-      <category term="iOS" scheme="http://guoxb.com/tags/iOS/"/>
+      <category term="CocoaPods" scheme="http://guoxb.com/tags/CocoaPods/"/>
     
   </entry>
   
