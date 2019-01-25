@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://guoxb.com/"/>
-  <updated>2019-01-24T03:29:44.646Z</updated>
+  <updated>2019-01-25T04:05:39.390Z</updated>
   <id>http://guoxb.com/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>HTML5 笔记</title>
+    <link href="http://guoxb.com/2019/01/25/HTML5/HTML5%20%E7%AC%94%E8%AE%B0/"/>
+    <id>http://guoxb.com/2019/01/25/HTML5/HTML5 笔记/</id>
+    <published>2019-01-25T01:47:28.239Z</published>
+    <updated>2019-01-25T04:05:39.390Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;学习html5以来，遇到很多项目中的问题，以下是个人总结的知识点，这些点在项目开发中经常遇到，希望对大家有所帮助~&lt;br&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="HTML5" scheme="http://guoxb.com/categories/HTML5/"/>
+    
+    
+      <category term="H5笔记" scheme="http://guoxb.com/tags/H5%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
   
   <entry>
     <title>webpack学习</title>
