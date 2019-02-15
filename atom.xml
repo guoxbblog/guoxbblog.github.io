@@ -347,9 +347,9 @@
       <category term="iOS" scheme="http://guoxb.com/categories/iOS/"/>
     
     
-      <category term="Podspec" scheme="http://guoxb.com/tags/Podspec/"/>
-    
       <category term="CocoaPods" scheme="http://guoxb.com/tags/CocoaPods/"/>
+    
+      <category term="Podspec" scheme="http://guoxb.com/tags/Podspec/"/>
     
   </entry>
   
