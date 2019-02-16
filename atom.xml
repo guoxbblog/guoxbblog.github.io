@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://guoxb.com/"/>
-  <updated>2019-01-25T04:05:39.391Z</updated>
+  <updated>2019-02-16T14:29:02.370Z</updated>
   <id>http://guoxb.com/</id>
   
   <author>
@@ -15,6 +15,40 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>阿里云部署git-检出代码</title>
+    <link href="http://guoxb.com/2019/02/16/%E9%98%BF%E9%87%8C%E4%BA%91/%E9%98%BF%E9%87%8C%E4%BA%91%E9%83%A8%E7%BD%B2git-%E6%A3%80%E5%87%BA%E4%BB%A3%E7%A0%81/"/>
+    <id>http://guoxb.com/2019/02/16/阿里云/阿里云部署git-检出代码/</id>
+    <published>2019-02-16T08:51:00.010Z</published>
+    <updated>2019-02-16T14:29:02.370Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;用hexo在github上搭建了一个个人博客，本想写几篇文章被百度收录一下，过来很久去百度搜索，发现都没有被收录。&lt;/p&gt;
+&lt;p&gt;后来才知道，原来github上是拒绝被爬虫爬取的。那该怎么办？&lt;/p&gt;
+&lt;p&gt;是不是把代码迁移出github就可以了？总之前前后后试了很多种办法，在这里为大家推荐三种方法：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Coding代码托管&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;这种办法可行，而且是免费的，但是存在很大的不稳定性，因为访问网站很慢，后来在终端ping了一下，发现丢包很严重，果断放弃！&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;码云&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;很强大，部署上去访问速度也很快，如果不想花钱，那么域名只能是**.io；如果想自定义域名，需要花钱，不到100元搞定，而且可以试用一个月，很ok的，但是需要花钱，也放弃了！&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;阿里云服务器&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;因为本人有阿里云服务器，所以就开始研究如何将代码部署到阿里云服务器。因为hexo生成的是静态网页，尝试使用upload上传工具上传到服务器，配置nginx访问，非常完美！美中不足的是每次修改都需要用工具上传，太繁琐，于是就研究在阿里云部署git~~~&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="git" scheme="http://guoxb.com/tags/git/"/>
+    
+      <category term="阿里云" scheme="http://guoxb.com/tags/%E9%98%BF%E9%87%8C%E4%BA%91/"/>
+    
+  </entry>
   
   <entry>
     <title>HTML5 笔记</title>
@@ -415,26 +449,6 @@
     
     
       <category term="iOS-App皮肤" scheme="http://guoxb.com/tags/iOS-App%E7%9A%AE%E8%82%A4/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CocoaPods使用步骤</title>
-    <link href="http://guoxb.com/2015/04/17/iOS/CocoaPods%E4%BD%BF%E7%94%A8%E6%AD%A5%E9%AA%A4/"/>
-    <id>http://guoxb.com/2015/04/17/iOS/CocoaPods使用步骤/</id>
-    <published>2015-04-17T01:31:17.000Z</published>
-    <updated>2019-01-24T03:23:28.061Z</updated>
-    
-    <summary type="html">
-    
-      &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ gem sources --remove https://rubygems.org/&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$ gem sources -a https://ruby.taobao.org/&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$ gem sources -l&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-    
-    </summary>
-    
-      <category term="iOS" scheme="http://guoxb.com/categories/iOS/"/>
-    
-    
-      <category term="CocoaPods" scheme="http://guoxb.com/tags/CocoaPods/"/>
     
   </entry>
   
