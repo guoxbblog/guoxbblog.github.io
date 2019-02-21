@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://guoxb.com/"/>
-  <updated>2019-02-16T14:35:22.455Z</updated>
+  <updated>2019-02-21T11:41:00.374Z</updated>
   <id>http://guoxb.com/</id>
   
   <author>
@@ -15,6 +15,46 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Python高级特性</title>
+    <link href="http://guoxb.com/2019/02/21/Python/Python%E9%AB%98%E7%BA%A7%E7%89%B9%E6%80%A7/"/>
+    <id>http://guoxb.com/2019/02/21/Python/Python高级特性/</id>
+    <published>2019-02-21T11:41:00.374Z</published>
+    <updated>2019-02-21T11:41:00.374Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Python是一种解释型、面向对象、动态数据类型的高级程序设计语言。&lt;br&gt;计算机工作的CPU只认识机器指令，尽管不同的编程语言差异极大，最后都得“翻译”成CPU可以执行的机器指令。而不同的编程语言，干同一个活，编写的代码量，差距也很大。&lt;br&gt;比如，完成同一个任务，C语言要写1000行代码，Java只需要写100行，而Python可能只要20行。&lt;br&gt;所以Python是一种相当高级的语言。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Python" scheme="http://guoxb.com/categories/Python/"/>
+    
+    
+      <category term="Python" scheme="http://guoxb.com/tags/Python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Python基础知识</title>
+    <link href="http://guoxb.com/2019/02/21/Python/Python%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
+    <id>http://guoxb.com/2019/02/21/Python/Python基础知识/</id>
+    <published>2019-02-21T11:40:06.268Z</published>
+    <updated>2019-02-21T11:40:06.268Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Python是一种解释型、面向对象、动态数据类型的高级程序设计语言。&lt;br&gt;计算机工作的CPU只认识机器指令，尽管不同的编程语言差异极大，最后都得“翻译”成CPU可以执行的机器指令。而不同的编程语言，干同一个活，编写的代码量，差距也很大。&lt;br&gt;比如，完成同一个任务，C语言要写1000行代码，Java只需要写100行，而Python可能只要20行。&lt;br&gt;所以Python是一种相当高级的语言。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Python" scheme="http://guoxb.com/categories/Python/"/>
+    
+    
+      <category term="Python" scheme="http://guoxb.com/tags/Python/"/>
+    
+  </entry>
   
   <entry>
     <title>阿里云部署git-检出代码</title>
@@ -370,9 +410,9 @@
       <category term="iOS" scheme="http://guoxb.com/categories/iOS/"/>
     
     
-      <category term="Podspec" scheme="http://guoxb.com/tags/Podspec/"/>
-    
       <category term="CocoaPods" scheme="http://guoxb.com/tags/CocoaPods/"/>
+    
+      <category term="Podspec" scheme="http://guoxb.com/tags/Podspec/"/>
     
   </entry>
   
@@ -393,51 +433,6 @@
     
     
       <category term="Spotlight" scheme="http://guoxb.com/tags/Spotlight/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>问题/技巧大整理</title>
-    <link href="http://guoxb.com/2016/02/09/iOS/%E9%97%AE%E9%A2%98:%E6%8A%80%E5%B7%A7%E5%A4%A7%E6%95%B4%E7%90%86/"/>
-    <id>http://guoxb.com/2016/02/09/iOS/问题:技巧大整理/</id>
-    <published>2016-02-09T12:00:42.000Z</published>
-    <updated>2019-01-24T03:27:16.347Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;最近一直忙于项目的开发，以下是开发项目中一些小问题和小技巧，一直写在笔记里，没时间整理，今天有空作个整理…&lt;br&gt;&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="iOS" scheme="http://guoxb.com/categories/iOS/"/>
-    
-    
-      <category term="iOS问题-技巧" scheme="http://guoxb.com/tags/iOS%E9%97%AE%E9%A2%98-%E6%8A%80%E5%B7%A7/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>为你的APP更换皮肤、主题</title>
-    <link href="http://guoxb.com/2015/07/18/iOS/%E4%B8%BA%E4%BD%A0%E7%9A%84APP%E6%9B%B4%E6%8D%A2%E7%9A%AE%E8%82%A4%E3%80%81%E4%B8%BB%E9%A2%98/"/>
-    <id>http://guoxb.com/2015/07/18/iOS/为你的APP更换皮肤、主题/</id>
-    <published>2015-07-18T03:33:20.000Z</published>
-    <updated>2019-01-24T03:26:54.148Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;最近在项目里面有个模块涉及到主题设置，在网上学习了很多篇文章，这篇文章主要谈一下个人的做法。&lt;/p&gt;
-&lt;p&gt;大致的步骤如下：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;整个应用依赖于一个主题管理器，主题管理器根据当前的主题配置，加载不同主题文件夹下的主题&lt;/li&gt;
-&lt;li&gt;在需要更换主题的地方创建统一通知【我的做法是：例如更换所有UILabel的字体颜色，创建UILabel基类，所有涉及主题切换的label都继承UILabel基类，在基类中创建通知】&lt;/li&gt;
-&lt;li&gt;切换主题，发送统一通知更换主题&lt;/li&gt;&lt;/ul&gt;
-    
-    </summary>
-    
-      <category term="iOS" scheme="http://guoxb.com/categories/iOS/"/>
-    
-    
-      <category term="iOS-App皮肤" scheme="http://guoxb.com/tags/iOS-App%E7%9A%AE%E8%82%A4/"/>
     
   </entry>
   
