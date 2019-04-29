@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://guoxb.com/"/>
-  <updated>2019-02-28T07:46:09.377Z</updated>
+  <updated>2019-04-29T08:34:49.354Z</updated>
   <id>http://guoxb.com/</id>
   
   <author>
@@ -15,6 +15,50 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Vue插件开发与发布</title>
+    <link href="http://guoxb.com/2019/04/28/Vue/Vue%E7%BB%84%E4%BB%B6%E5%BC%80%E5%8F%91%E4%B8%8E%E5%8F%91%E5%B8%83/"/>
+    <id>http://guoxb.com/2019/04/28/Vue/Vue组件开发与发布/</id>
+    <published>2019-04-28T09:05:46.984Z</published>
+    <updated>2019-04-29T08:34:49.354Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Vue.js 作为当下比较热门的技术，它的核心库只关注视图层，容易上手。组件是Vue.js最强大的功能之一。组件可以扩展HTML元素，封装可重用的代码。在较高层面上，组件是自定义的元素，Vue.js的编译器为它添加特殊功能。在有些情况下，组件也可以是原生HTML元素的形式，以js特性扩展。&lt;/p&gt;
+&lt;p&gt;这篇文章带你创建属于自己的组件库，并打包到 npm 供更多人使用。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Vue" scheme="http://guoxb.com/categories/Vue/"/>
+    
+    
+      <category term="前端" scheme="http://guoxb.com/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+      <category term="vue" scheme="http://guoxb.com/tags/vue/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ECMAScript 6.0</title>
+    <link href="http://guoxb.com/2019/03/18/Javascript/ES6.0/"/>
+    <id>http://guoxb.com/2019/03/18/Javascript/ES6.0/</id>
+    <published>2019-03-18T03:10:22.403Z</published>
+    <updated>2019-03-18T06:03:56.946Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;ECMAScript 6.0（简称ES6）是JavaScript语言的下一代标准，在2015年6月正式发布，目标是使得JavaScript语言可以实现复杂的大型应用程序，成为企业级开发语言。&lt;/p&gt;
+&lt;p&gt;先说一下 ECMAScript 和 JavaScript 的关系：JavaScript 是 Netscape 公司创造的；ECMAScript 是 ECMA标准化组织规定的浏览器脚本语言标准。可以说，ECMAScript 和 JavaScript 的关系是，前者是后者的规格，后者是前者的一种实现。&lt;br&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="JavaScript" scheme="http://guoxb.com/categories/JavaScript/"/>
+    
+    
+      <category term="ES6" scheme="http://guoxb.com/tags/ES6/"/>
+    
+  </entry>
   
   <entry>
     <title>Python高级特性</title>
@@ -391,48 +435,6 @@
     
     
       <category term="HTML5学习" scheme="http://guoxb.com/tags/HTML5%E5%AD%A6%E4%B9%A0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Podspec-上传个人代码至CocoaPods官方库</title>
-    <link href="http://guoxb.com/2016/08/24/iOS/Podspec-%E4%B8%8A%E4%BC%A0%E4%B8%AA%E4%BA%BA%E4%BB%A3%E7%A0%81%E8%87%B3Cocoapod%E5%AE%98%E6%96%B9%E5%BA%93/"/>
-    <id>http://guoxb.com/2016/08/24/iOS/Podspec-上传个人代码至Cocoapod官方库/</id>
-    <published>2016-08-24T04:06:01.000Z</published>
-    <updated>2019-01-24T03:26:00.965Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Cocoapods作为iOS开发的包管理器，给我们的开发带来了极大的便利，而且越来越多的第三方类库支持Pod，可以通过Pod傻瓜式的集成到自己的工程中，那么问题来了，我自己也有一系列的小工具类，怎么让它也支持pod集成进而让其他朋友方便的使用呢?&lt;br&gt;&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="iOS" scheme="http://guoxb.com/categories/iOS/"/>
-    
-    
-      <category term="CocoaPods" scheme="http://guoxb.com/tags/CocoaPods/"/>
-    
-      <category term="Podspec" scheme="http://guoxb.com/tags/Podspec/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>iOS9开放的新API--Spotlight使用指南</title>
-    <link href="http://guoxb.com/2016/05/04/iOS/ios9%E5%BC%80%E6%94%BE%E7%9A%84%E6%96%B0api--spotlight%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/"/>
-    <id>http://guoxb.com/2016/05/04/iOS/ios9开放的新api--spotlight使用指南/</id>
-    <published>2016-05-04T03:01:59.000Z</published>
-    <updated>2019-02-28T08:41:14.519Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;作为苹果iOS9的重要特性之一，Spotlight搜索如今重新回到主界面最左侧（同样支持主界面下滑呼出），通过API的支持，还带来了全新的Universal Search通用搜索功能，除了网络以及系统本身内容之外，还能直接搜索第三方应用内的相关内容。下面我们就来详细研究下Spotlight&lt;br&gt;&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="iOS" scheme="http://guoxb.com/categories/iOS/"/>
-    
-    
-      <category term="Spotlight" scheme="http://guoxb.com/tags/Spotlight/"/>
     
   </entry>
   
