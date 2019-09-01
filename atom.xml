@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://guoxb.com/"/>
-  <updated>2019-04-29T08:34:49.354Z</updated>
+  <updated>2019-09-01T01:48:36.548Z</updated>
   <id>http://guoxb.com/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>HTML5代码规范及屏幕适配</title>
+    <link href="http://guoxb.com/2019/08/31/HTML5/HTML5%E4%BB%A3%E7%A0%81%E8%A7%84%E8%8C%83%E5%8F%8A%E5%B1%8F%E5%B9%95%E9%80%82%E9%85%8D/"/>
+    <id>http://guoxb.com/2019/08/31/HTML5/HTML5代码规范及屏幕适配/</id>
+    <published>2019-08-31T01:00:00.000Z</published>
+    <updated>2019-09-01T01:48:36.548Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;从事前端以来，遇到很多项目开发当中的问题，也积累了很多经验。&lt;/p&gt;
+&lt;p&gt;以下总结了前端代码编写规范和网页在不同屏幕大小的适配，目的在于让开发者规范自己的代码，不仅看起来清晰，也便于后期代码维护。&lt;/p&gt;
+&lt;p&gt;我们的目标是：走自己的路，也让别人有路可走~&lt;br&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="HTML5" scheme="http://guoxb.com/categories/HTML5/"/>
+    
+    
+      <category term="前端" scheme="http://guoxb.com/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+      <category term="CSS" scheme="http://guoxb.com/tags/CSS/"/>
+    
+      <category term="HTML" scheme="http://guoxb.com/tags/HTML/"/>
+    
+      <category term="适配" scheme="http://guoxb.com/tags/%E9%80%82%E9%85%8D/"/>
+    
+  </entry>
   
   <entry>
     <title>Vue插件开发与发布</title>
@@ -415,26 +443,6 @@
     
     
       <category term="JavaScript学习" scheme="http://guoxb.com/tags/JavaScript%E5%AD%A6%E4%B9%A0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>HTML5成长之路一</title>
-    <link href="http://guoxb.com/2016/08/29/HTML5/HTML5%E5%AD%A6%E4%B9%A0%E4%B9%8B%E8%B7%AF%E4%B8%80/"/>
-    <id>http://guoxb.com/2016/08/29/HTML5/HTML5学习之路一/</id>
-    <published>2016-08-29T13:36:44.000Z</published>
-    <updated>2019-01-24T03:23:12.269Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;学习一门新的编程语言，是一个循序渐进的过程！&lt;br&gt;&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="HTML5" scheme="http://guoxb.com/categories/HTML5/"/>
-    
-    
-      <category term="HTML5学习" scheme="http://guoxb.com/tags/HTML5%E5%AD%A6%E4%B9%A0/"/>
     
   </entry>
   
