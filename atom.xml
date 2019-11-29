@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://guoxb.com/"/>
-  <updated>2019-09-01T01:48:36.548Z</updated>
+  <updated>2019-09-04T07:29:40.713Z</updated>
   <id>http://guoxb.com/</id>
   
   <author>
@@ -15,6 +15,50 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>iOS序列化与反序列化</title>
+    <link href="http://guoxb.com/2019/09/04/iOS/%E6%9C%AA%E5%91%BD%E5%90%8D/"/>
+    <id>http://guoxb.com/2019/09/04/iOS/未命名/</id>
+    <published>2019-09-04T06:07:51.387Z</published>
+    <updated>2019-09-04T07:29:40.713Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;在iOS中一个自定义对象是无法直接存入到文件中的，必须先转化成二进制流才行。&lt;br&gt;从对象到二进制数据的过程我们一般称为对象的序列化(Serialization)，也称为归档(Archive)。&lt;br&gt;同理，从二进制数据到对象的过程一般称为反序列化或者反归档。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="iOS" scheme="http://guoxb.com/categories/iOS/"/>
+    
+    
+      <category term="iOS" scheme="http://guoxb.com/tags/iOS/"/>
+    
+      <category term="序列化" scheme="http://guoxb.com/tags/%E5%BA%8F%E5%88%97%E5%8C%96/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>iOS文件管理</title>
+    <link href="http://guoxb.com/2019/09/04/iOS/iOS%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86/"/>
+    <id>http://guoxb.com/2019/09/04/iOS/iOS文件管理/</id>
+    <published>2019-09-04T02:34:16.106Z</published>
+    <updated>2019-09-04T05:53:25.624Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;iOS 当中，每个 App程序 都有一个独立的文件管理系统，而且只能操作对应的文件系统当中的数据，这个文件系统被称为 &lt;strong&gt;沙盒&lt;/strong&gt;。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="iOS" scheme="http://guoxb.com/categories/iOS/"/>
+    
+    
+      <category term="iOS" scheme="http://guoxb.com/tags/iOS/"/>
+    
+      <category term="沙盒" scheme="http://guoxb.com/tags/%E6%B2%99%E7%9B%92/"/>
+    
+  </entry>
   
   <entry>
     <title>HTML5代码规范及屏幕适配</title>
@@ -41,6 +85,28 @@
       <category term="HTML" scheme="http://guoxb.com/tags/HTML/"/>
     
       <category term="适配" scheme="http://guoxb.com/tags/%E9%80%82%E9%85%8D/"/>
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="http://guoxb.com/2019/07/21/Vue/Vue%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/"/>
+    <id>http://guoxb.com/2019/07/21/Vue/Vue环境搭建/</id>
+    <published>2019-07-21T14:38:58.599Z</published>
+    <updated>2019-08-07T08:12:09.677Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;Vue环境搭建&quot;&gt;&lt;a href=&quot;#Vue环境搭建&quot; class=&quot;headerlink&quot; title=&quot;Vue环境搭建&quot;&gt;&lt;/a&gt;Vue环境搭建&lt;/h3&gt;&lt;figure class=&quot;highlight
+        
+      
+    
+    </summary>
+    
     
   </entry>
   
@@ -383,66 +449,6 @@
     
     
       <category term="函数" scheme="http://guoxb.com/tags/%E5%87%BD%E6%95%B0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>HTML5 拓展jquery scroll事件，支持scroll start 和 scroll stop</title>
-    <link href="http://guoxb.com/2017/03/21/HTML5/HTML5%20jquery%20scroll/"/>
-    <id>http://guoxb.com/2017/03/21/HTML5/HTML5 jquery scroll/</id>
-    <published>2017-03-21T06:49:44.000Z</published>
-    <updated>2019-01-24T03:23:00.295Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;javascript里有一个事件是滚动事件，只要拖动滚动条，就会触发事件。&lt;br&gt;用jquery的话，这个事件scroll 可以查看jquery api ：&lt;a href=&quot;http://api.jquery.com/scroll/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;http://api.jquery.com/scroll/&lt;/a&gt;&lt;br&gt;但scroll 事件有一个缺陷，就是只能判断滚动条滚动，而不能监控滚动条停止滚动时的事件。现用jquery扩展一下scroll 事件,不多说，直接上代码实在点。&lt;br&gt;&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="HTML5" scheme="http://guoxb.com/categories/HTML5/"/>
-    
-    
-      <category term="jquery-scroll" scheme="http://guoxb.com/tags/jquery-scroll/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>JavaScript - Num2</title>
-    <link href="http://guoxb.com/2016/11/14/Javascript/JavaScript%20-%20Num2/"/>
-    <id>http://guoxb.com/2016/11/14/Javascript/JavaScript - Num2/</id>
-    <published>2016-11-14T00:20:47.000Z</published>
-    <updated>2019-01-24T03:27:33.846Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;内容概要：数组、对象条件判断以及循环。&lt;br&gt;&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="JavaScript" scheme="http://guoxb.com/categories/JavaScript/"/>
-    
-    
-      <category term="JavaScript学习" scheme="http://guoxb.com/tags/JavaScript%E5%AD%A6%E4%B9%A0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>JavaScript - Num1</title>
-    <link href="http://guoxb.com/2016/11/03/Javascript/JavaScript%20-%20Num1/"/>
-    <id>http://guoxb.com/2016/11/03/Javascript/JavaScript - Num1/</id>
-    <published>2016-11-03T13:52:56.000Z</published>
-    <updated>2019-01-24T03:27:30.300Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;JavaScript 是世界上最流行的编程语言。&lt;br&gt;因为你在电脑、手机、平板上浏览的所有的网页，以及无数基于HTML5的手机App，交互逻辑都是由JavaScript驱动的。JavaScript 插入 HTML 页面后，可由所有的现代浏览器执行。&lt;br&gt;&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="JavaScript" scheme="http://guoxb.com/categories/JavaScript/"/>
-    
-    
-      <category term="JavaScript学习" scheme="http://guoxb.com/tags/JavaScript%E5%AD%A6%E4%B9%A0/"/>
     
   </entry>
   
