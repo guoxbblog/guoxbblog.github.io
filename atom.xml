@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://guoxb.com/"/>
-  <updated>2019-09-04T07:29:40.713Z</updated>
+  <updated>2019-12-12T02:46:15.043Z</updated>
   <id>http://guoxb.com/</id>
   
   <author>
@@ -17,9 +17,29 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>iOS - AJScrollContentView</title>
+    <link href="http://guoxb.com/2019/12/11/iOS/AJScrollContentView/"/>
+    <id>http://guoxb.com/2019/12/11/iOS/AJScrollContentView/</id>
+    <published>2019-12-11T13:50:20.000Z</published>
+    <updated>2019-12-12T02:46:15.043Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;仿网易新闻，点击顶部标题，改变下面内容页面；以及，滑动内容页面，改变顶部标题的功能。&lt;br&gt;因为项目中多次用到这样的控件，很多主流App也有这样的需求，有必要简单封装一下，分享给更多的开发者。&lt;br&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="iOS" scheme="http://guoxb.com/categories/iOS/"/>
+    
+    
+      <category term="Cocoapods" scheme="http://guoxb.com/tags/Cocoapods/"/>
+    
+  </entry>
+  
+  <entry>
     <title>iOS序列化与反序列化</title>
-    <link href="http://guoxb.com/2019/09/04/iOS/%E6%9C%AA%E5%91%BD%E5%90%8D/"/>
-    <id>http://guoxb.com/2019/09/04/iOS/未命名/</id>
+    <link href="http://guoxb.com/2019/09/04/iOS/iOS%E5%BA%8F%E5%88%97%E5%8C%96%E4%B8%8E%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96/"/>
+    <id>http://guoxb.com/2019/09/04/iOS/iOS序列化与反序列化/</id>
     <published>2019-09-04T06:07:51.387Z</published>
     <updated>2019-09-04T07:29:40.713Z</updated>
     
@@ -89,24 +109,26 @@
   </entry>
   
   <entry>
-    <title></title>
+    <title>Vue环境搭建</title>
     <link href="http://guoxb.com/2019/07/21/Vue/Vue%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/"/>
     <id>http://guoxb.com/2019/07/21/Vue/Vue环境搭建/</id>
     <published>2019-07-21T14:38:58.599Z</published>
-    <updated>2019-08-07T08:12:09.677Z</updated>
+    <updated>2019-12-12T02:44:22.964Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;h3 id=&quot;Vue环境搭建&quot;&gt;&lt;a href=&quot;#Vue环境搭建&quot; class=&quot;headerlink&quot; title=&quot;Vue环境搭建&quot;&gt;&lt;/a&gt;Vue环境搭建&lt;/h3&gt;&lt;figure class=&quot;highlight
-        
-      
+      &lt;p&gt;创建一个Vue项目，遇到一些问题，比如：请求接口存在跨域问题怎么办？&lt;/p&gt;
+&lt;p&gt;这篇文章是我自学Vue遇到的一些问题及总结。&lt;/p&gt;
+&lt;p&gt;后续会不断更新…&lt;br&gt;&lt;/p&gt;
     
     </summary>
     
+      <category term="Vue" scheme="http://guoxb.com/categories/Vue/"/>
+    
+    
+      <category term="前端框架" scheme="http://guoxb.com/tags/%E5%89%8D%E7%AB%AF%E6%A1%86%E6%9E%B6/"/>
+    
+      <category term="Vue" scheme="http://guoxb.com/tags/Vue/"/>
     
   </entry>
   
@@ -429,26 +451,6 @@
       <category term="前端框架" scheme="http://guoxb.com/tags/%E5%89%8D%E7%AB%AF%E6%A1%86%E6%9E%B6/"/>
     
       <category term="Vue" scheme="http://guoxb.com/tags/Vue/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>JavaScript立即执行函数 (function(){...})(jQuery)</title>
-    <link href="http://guoxb.com/2017/06/06/Javascript/JavaScript%E7%AB%8B%E5%8D%B3%E6%89%A7%E8%A1%8C%E5%87%BD%E6%95%B0/"/>
-    <id>http://guoxb.com/2017/06/06/Javascript/JavaScript立即执行函数/</id>
-    <published>2017-06-06T13:32:20.000Z</published>
-    <updated>2019-01-24T03:28:34.709Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;今天意外发掘JavaScript中一个不广为人知，且超实用的函数–立即执行函数，这个函数被广泛应用于各类插件js中，通常它的写法是(function(){…})()包住业务代码，使用jQuery时比较常见。&lt;br&gt;&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="JavaScript" scheme="http://guoxb.com/categories/JavaScript/"/>
-    
-    
-      <category term="函数" scheme="http://guoxb.com/tags/%E5%87%BD%E6%95%B0/"/>
     
   </entry>
   
