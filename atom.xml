@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://guoxb.com/"/>
-  <updated>2019-12-12T02:46:15.043Z</updated>
+  <updated>2019-12-16T08:36:55.016Z</updated>
   <id>http://guoxb.com/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>iOS - Runtime 总结</title>
+    <link href="http://guoxb.com/2019/12/12/iOS/iOS%20Runtime%E6%80%BB%E7%BB%93/"/>
+    <id>http://guoxb.com/2019/12/12/iOS/iOS Runtime总结/</id>
+    <published>2019-12-12T10:31:03.955Z</published>
+    <updated>2019-12-16T08:36:55.016Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;OC是一门动态语言，它会把一些编译时做的决定推迟到运行时。因此，仅仅有编译器是不够的，还需要一个运行时系统（Runtime System）来执行编译后的代码。&lt;/p&gt;
+&lt;p&gt;Runtime系统的核心是一个用C，C++以及在最核心的消息发送部分甚至使用汇编语言编写的一套底层API库，它是OC面向对象和动态发送消息的基石。&lt;/p&gt;
+&lt;p&gt;简单来说， Runtime 是一个库，这个库使我们可以在程序运行时创建对象、检查对象，修改类和对象的方法。&lt;br&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="iOS" scheme="http://guoxb.com/categories/iOS/"/>
+    
+    
+      <category term="runtime" scheme="http://guoxb.com/tags/runtime/"/>
+    
+  </entry>
   
   <entry>
     <title>iOS - AJScrollContentView</title>
@@ -420,28 +442,6 @@
     <summary type="html">
     
       &lt;p&gt;搞懂一门新的技术、新的编程语言，除了研究官方文档，我们还可以研究猿友们开源的项目进行学习、进步。&lt;br&gt;今天来记录一下这段时间研究的一个开源项目的成果。&lt;br&gt;&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Vue" scheme="http://guoxb.com/categories/Vue/"/>
-    
-    
-      <category term="前端框架" scheme="http://guoxb.com/tags/%E5%89%8D%E7%AB%AF%E6%A1%86%E6%9E%B6/"/>
-    
-      <category term="Vue" scheme="http://guoxb.com/tags/Vue/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Vue 2.0 （一）</title>
-    <link href="http://guoxb.com/2017/06/21/Vue/Vue%202.0%EF%BC%88%E4%B8%80%EF%BC%89/"/>
-    <id>http://guoxb.com/2017/06/21/Vue/Vue 2.0（一）/</id>
-    <published>2017-06-21T13:01:20.000Z</published>
-    <updated>2019-01-24T03:29:54.161Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;项目搭建不做赘述，可以参考[Vue2.0 新手完全填坑攻略——从环境搭建到发布][1]&lt;br&gt;我们项目用的是：vue2.0 + vue-cli + webpack + vue-router2.0 + vue-resource1.3.4&lt;br&gt;&lt;/p&gt;
     
     </summary>
     
