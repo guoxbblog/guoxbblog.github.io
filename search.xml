@@ -308,8 +308,8 @@
         <category>iOS</category>
       </categories>
       <tags>
-        <tag>CocoaPods</tag>
         <tag>Podspec</tag>
+        <tag>CocoaPods</tag>
       </tags>
   </entry>
   <entry>
