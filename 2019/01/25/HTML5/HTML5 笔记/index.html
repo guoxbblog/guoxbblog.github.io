@@ -1,0 +1,1483 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html class="theme-next gemini" lang="zh-CN">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="baidu-site-verification" content="kOgD1OZoK1">
+
+
+
+  
+  
+  <link rel="stylesheet" href="/lib/needsharebutton/needsharebutton.css">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=6.6.0" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.6.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=6.6.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=6.6.0">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=6.6.0" color="#222">
+
+
+
+
+
+
+
+
+
+<script id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '6.6.0',
+    sidebar: {"position":"left","display":"always","offset":12,"b2t":false,"scrollpercent":true,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta name="description" content="学习html5以来，遇到很多项目中的问题，以下是个人总结的知识点，这些点在项目开发中经常遇到，希望对大家有所帮助~">
+<meta name="keywords" content="H5笔记">
+<meta property="og:type" content="article">
+<meta property="og:title" content="HTML5 笔记">
+<meta property="og:url" content="https://guoxb.com/2019/01/25/HTML5/HTML5 笔记/index.html">
+<meta property="og:site_name" content="夜雨寒">
+<meta property="og:description" content="学习html5以来，遇到很多项目中的问题，以下是个人总结的知识点，这些点在项目开发中经常遇到，希望对大家有所帮助~">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2019-01-25T04:05:39.391Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="HTML5 笔记">
+<meta name="twitter:description" content="学习html5以来，遇到很多项目中的问题，以下是个人总结的知识点，这些点在项目开发中经常遇到，希望对大家有所帮助~">
+
+
+
+  <link rel="alternate" href="/atom.xml" title="夜雨寒" type="application/atom+xml">
+
+
+
+
+  <link rel="canonical" href="https://guoxb.com/2019/01/25/HTML5/HTML5 笔记/">
+
+
+
+<script id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>HTML5 笔记 | 夜雨寒</title>
+  
+
+
+
+
+
+
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?5eb6048ddc0fe5e6ca3213619967c429";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+
+
+
+  <noscript>
+  <style>
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion .logo-line-before i { left: initial; }
+    .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">夜雨寒</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+      
+        <p class="site-subtitle">天行健 君子以自强不息</p>
+      
+    
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>首页</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-vuedocs">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="https://gxbxgithub.github.io/" rel="noopener" target="_blank"><i class="menu-item-icon fa fa-fw fa-book"></i> <br>Vue组件</a>
+
+  </li>
+
+      
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>搜索</a>
+        </li>
+      
+    </ul>
+  
+
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+            
+
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://guoxb.com/2019/01/25/HTML5/HTML5 笔记/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="夜雨寒">
+      <meta itemprop="description" content="我的微信公众号：夜雨寒l，技术博客，iOS开发，HTML5，NodeJS学习">
+      <meta itemprop="image" content="/images/head.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="夜雨寒">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">HTML5 笔记
+
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-01-25 09:47:28 / 修改时间：12:05:39" itemprop="dateCreated datePublished" datetime="2019-01-25T09:47:28+08:00">2019-01-25</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/HTML5/" itemprop="url" rel="index"><span itemprop="name">HTML5</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>学习html5以来，遇到很多项目中的问题，以下是个人总结的知识点，这些点在项目开发中经常遇到，希望对大家有所帮助~<br><a id="more"></a></p>
+<h3 id="1-li-撑不起ul-可以在ul最下面添加如下代码"><a href="#1-li-撑不起ul-可以在ul最下面添加如下代码" class="headerlink" title="1. li 撑不起ul 可以在ul最下面添加如下代码"></a>1. <code>li</code> 撑不起<code>ul</code> 可以在<code>ul</code>最下面添加如下代码</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;div style=&quot;height:0;overflow:hidden;clear:both;&quot;&gt;&lt;/div&gt;</span><br><span class="line">// 或者</span><br><span class="line">.clearfix &#123; *zoom: 1;  &#125;</span><br><span class="line">.clearfix:after &#123; content: ‘’; display: block; clear: both; &#125;</span><br></pre></td></tr></table></figure>
+<h3 id="2-浏览器兼容"><a href="#2-浏览器兼容" class="headerlink" title="2. 浏览器兼容"></a>2. 浏览器兼容</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">-ms-box-sizing:border-box;   //IE</span><br><span class="line">-moz-box-sizing:border-box;   //Firefox</span><br><span class="line">-webkit-box-sizing:border-box;</span><br><span class="line">box-sizing:border-box;</span><br></pre></td></tr></table></figure>
+<h3 id="3-移动端css—加上如下代码"><a href="#3-移动端css—加上如下代码" class="headerlink" title="3. 移动端css—加上如下代码"></a>3. 移动端css—加上如下代码</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">button,select&#123;background:transparent; -webkit-appearance:none;&#125;</span><br><span class="line">input, button, select, textarea&#123;outline:none !important;&#125;</span><br><span class="line">textarea&#123;resize: none;&#125;</span><br><span class="line">input:focus, button:focus, select:focus, textarea:focus&#123;box-shadow:none !important; outline:none !important;&#125;</span><br><span class="line"></span><br><span class="line">// 取消手机点击屏幕时，会出现的灰块</span><br><span class="line">html,body&#123;-webkit-text-size-adjust: 100%;-webkit-tap-highlight-color: rgba(0, 0, 0, 0);&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="4-文本显示不全，后面显示…"><a href="#4-文本显示不全，后面显示…" class="headerlink" title="4. 文本显示不全，后面显示…"></a>4. 文本显示不全，后面显示…</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">display: block; overflow:hidden;word-break:keep-all;white-space:nowrap;text-overflow:ellipsis;</span><br><span class="line"></span><br><span class="line">&lt;code&gt;换行</span><br><span class="line">white-space: normal; word-break: break-all;</span><br></pre></td></tr></table></figure>
+<h3 id="5-百分比-px"><a href="#5-百分比-px" class="headerlink" title="5. 百分比-px"></a>5. 百分比-<code>px</code></h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">width: -webkit-calc( 100% - 70px ); width: calc( 100% - 70px );</span><br></pre></td></tr></table></figure>
+<h3 id="6-文本太长省略。。。"><a href="#6-文本太长省略。。。" class="headerlink" title="6. 文本太长省略。。。"></a>6. 文本太长省略。。。</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">overflow: hidden;  text-overflow:ellipsis; white-space:nowrap;</span><br></pre></td></tr></table></figure>
+<h3 id="7-textarea-高度随文本变化"><a href="#7-textarea-高度随文本变化" class="headerlink" title="7. textarea 高度随文本变化"></a>7. <code>textarea</code> 高度随文本变化</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">&lt;textarea style=&quot;overflow: hidden; font-style: normal; font-size: 14px; line-height: normal; &quot; rows=&quot;1&quot; cols=&quot;30&quot; onfocus=&quot;javascript:ResizeTextarea(this,1);&quot; onclick=&quot;javascript:ResizeTextarea(this,1);&quot; onkeyup=&quot;javascript:ResizeTextarea(this,1);&quot;&gt;&lt;/textarea&gt;	</span><br><span class="line"></span><br><span class="line">textarea&#123;min-height: 33px; max-height: 65px; padding: 0; border: 0; width: -webkit-calc( 100% - 20px ); width: calc( 100% - 20px ); margin: 6px 0; border-radius: 5px; padding: 7px;&#125;</span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">var agt = navigator.userAgent.toLowerCase();</span><br><span class="line">var is_op = (agt.indexOf(&quot;opera&quot;) != -1);</span><br><span class="line">var is_ie = (agt.indexOf(&quot;msie&quot;) != -1) &amp;&amp; document.all &amp;&amp; !is_op;</span><br><span class="line">function ResizeTextarea(a,row)&#123;</span><br><span class="line">    if(!a)&#123;return&#125;</span><br><span class="line">    if(!row)</span><br><span class="line">        row=5;</span><br><span class="line">    var b=a.value.split(&quot;\n&quot;);</span><br><span class="line">    var c=is_ie?1:0;</span><br><span class="line">    c+=b.length;</span><br><span class="line">    var d=a.cols;</span><br><span class="line">    if(d&lt;=20)&#123;d=40&#125;</span><br><span class="line">    for(var e=0;e&lt;b.length;e++)&#123;</span><br><span class="line">        if(b[e].length&gt;=d)&#123;</span><br><span class="line">            c+=Math.ceil(b[e].length/d)</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    c=Math.max(c,row);</span><br><span class="line">    if(c!=a.rows)&#123;</span><br><span class="line">        a.rows=c;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="8-手机端打开h5页面，点击a标签会有阴影的问题"><a href="#8-手机端打开h5页面，点击a标签会有阴影的问题" class="headerlink" title="8. 手机端打开h5页面，点击a标签会有阴影的问题"></a>8. 手机端打开h5页面，点击a标签会有阴影的问题</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">对a标签 添加样式 -webkit-tap-highlight-color:transparent;</span><br></pre></td></tr></table></figure>
+<h3 id="9-模糊-【毛玻璃】"><a href="#9-模糊-【毛玻璃】" class="headerlink" title="9. 模糊 -【毛玻璃】"></a>9. 模糊 -【毛玻璃】</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">.blur &#123;	</span><br><span class="line">    filter: url(blur.svg#blur); /* FireFox, Chrome, Opera */</span><br><span class="line">    -webkit-filter: blur(10px); /* Chrome, Opera */</span><br><span class="line">    -moz-filter: blur(10px);</span><br><span class="line">    -ms-filter: blur(10px);    </span><br><span class="line">    filter: blur(10px);</span><br><span class="line"> filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius=10, MakeShadow=false); /* IE6~IE9 */</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="10-修复H5-Button-颜色异常问题"><a href="#10-修复H5-Button-颜色异常问题" class="headerlink" title="10. 修复H5 Button 颜色异常问题"></a>10. 修复H5 <code>Button</code> 颜色异常问题</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">appearance:square-button;</span><br><span class="line">-moz-appearance:square-button; /* Firefox */</span><br><span class="line">-webkit-appearance:square-button; /* Safari 和 Chrome */</span><br></pre></td></tr></table></figure>
+<h3 id="11-获取url后面的参数值"><a href="#11-获取url后面的参数值" class="headerlink" title="11. 获取url后面的参数值"></a>11. 获取url后面的参数值</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">function UrlValue(name) &#123;</span><br><span class="line">    var reg = new RegExp(&quot;(^|&amp;)&quot; + name + &quot;=([^&amp;]*)(&amp;|$)&quot;, &quot;i&quot;);</span><br><span class="line">    var r = window.location.search.substr(1).match(reg);</span><br><span class="line">    if (r != null) return unescape(r[2]); return null;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// 中文乱码问题</span><br><span class="line"></span><br><span class="line">function UrlValue(name) &#123;</span><br><span class="line">    var reg = new RegExp(&quot;(^|&amp;)&quot; + name + &quot;=([^&amp;]*)(&amp;|$)&quot;, &quot;i&quot;);</span><br><span class="line">    var r = window.location.search.substr(1).match(reg);</span><br><span class="line">    if (r != null) return decodeURI(r[2]); return &quot;&quot;;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="12-获取第几个到第几个元素"><a href="#12-获取第几个到第几个元素" class="headerlink" title="12. 获取第几个到第几个元素"></a>12. 获取第几个到第几个元素</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$(&apos;.cls_list ul li&apos;).slice(li_length-3, li_length).css(&apos;border-bottom&apos;, &apos;none&apos;);</span><br></pre></td></tr></table></figure>
+<h3 id="13-渐变"><a href="#13-渐变" class="headerlink" title="13. 渐变"></a>13. 渐变</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">#grad1 &#123;</span><br><span class="line">    height: 200px;</span><br><span class="line">    background: -webkit-linear-gradient(red, blue); /* Safari 5.1 - 6.0 */</span><br><span class="line">    background: -o-linear-gradient(red, blue); /* Opera 11.1 - 12.0 */</span><br><span class="line">    background: -moz-linear-gradient(red, blue); /* Firefox 3.6 - 15 */</span><br><span class="line">    background: linear-gradient(red, blue); /* 标准的语法（必须放在最后） */</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="14-置顶"><a href="#14-置顶" class="headerlink" title="14. 置顶"></a>14. 置顶</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">function scrollToTop()&#123;</span><br><span class="line">    $(&apos;body,html&apos;).animate(&#123; scrollTop: 0 &#125;, 200);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="15-document-on-在Safari浏览器不能用的问题解决方案"><a href="#15-document-on-在Safari浏览器不能用的问题解决方案" class="headerlink" title="15. $(document).on()在Safari浏览器不能用的问题解决方案"></a>15. <code>$(document).on()</code>在Safari浏览器不能用的问题解决方案</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">点击的元素加样式cursor: pointer;</span><br></pre></td></tr></table></figure>
+<h3 id="16-Safari浏览器点击数字自动拨打电话"><a href="#16-Safari浏览器点击数字自动拨打电话" class="headerlink" title="16. Safari浏览器点击数字自动拨打电话"></a>16. Safari浏览器点击数字自动拨打电话</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;meta name=&quot;format-detection&quot; content=&quot;telephone=no,email=no,adress=no&quot;&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="17-引入自定义字体"><a href="#17-引入自定义字体" class="headerlink" title="17. 引入自定义字体"></a>17. 引入自定义字体</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">@font-face &#123;</span><br><span class="line">	font-family: &apos;FZZZHJT&apos;;</span><br><span class="line">	src: url(&apos;../font/FZZZHJT.eot&apos;);</span><br><span class="line">	src:</span><br><span class="line">	    url(&apos;../font/FZZZHJT.eot?#font-spider&apos;) format(&apos;embedded-opentype&apos;),</span><br><span class="line">	    /*url(&apos;../font/FZZDHJT.woff&apos;) format(&apos;woff&apos;),*/</span><br><span class="line">	    url(&apos;../font/FZZZHJT.ttf&apos;) format(&apos;truetype&apos;),</span><br><span class="line">	    url(&apos;../font/FZZZHJT.svg&apos;) format(&apos;svg&apos;);</span><br><span class="line">  	font-weight: normal;</span><br><span class="line">  	font-style: normal;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="18-与客户端交互"><a href="#18-与客户端交互" class="headerlink" title="18. 与客户端交互"></a>18. 与客户端交互</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">var ios_bridge = null;</span><br><span class="line">connectWebViewJavascriptBridge(function(bridge) &#123;</span><br><span class="line">    /* Init your app here */</span><br><span class="line">    if(bridge) &#123;</span><br><span class="line">        ios_bridge = bridge;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;);</span><br><span class="line">function connectWebViewJavascriptBridge(callback)&#123;</span><br><span class="line">    if (window.WebViewJavascriptBridge) &#123;</span><br><span class="line">        callback(WebViewJavascriptBridge)</span><br><span class="line">    &#125; else &#123;</span><br><span class="line">        document.addEventListener(&apos;WebViewJavascriptBridgeReady&apos;, function() &#123;</span><br><span class="line">            callback(WebViewJavascriptBridge)</span><br><span class="line">        &#125;, false)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">// 开启试管之旅</span><br><span class="line">function openTubeTour()&#123;</span><br><span class="line">	if(window.JavascriptInterface &amp;&amp; window.JavascriptInterface[func_tag])&#123;</span><br><span class="line">		window.JavascriptInterface.gotoDoctor(tag_id, tag_name)</span><br><span class="line">	&#125;</span><br><span class="line">	if(ios_bridge)&#123;</span><br><span class="line">		ios_bridge.send(&#123;tag:&quot;gotoTopic&quot;, topic_id:topic_id&#125;);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="19-jquery-拷贝数组"><a href="#19-jquery-拷贝数组" class="headerlink" title="19. jquery 拷贝数组"></a>19. jquery 拷贝数组</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[].concat(new_arr);</span><br></pre></td></tr></table></figure>
+<h3 id="20-透明度"><a href="#20-透明度" class="headerlink" title="20. 透明度"></a>20. 透明度</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">filter:alpha(opacity=70); -moz-opacity:0.7; opacity:0.7;</span><br></pre></td></tr></table></figure>
+<h3 id="21-中心平移法解决划线粗的问题"><a href="#21-中心平移法解决划线粗的问题" class="headerlink" title="21. 中心平移法解决划线粗的问题"></a>21. 中心平移法解决划线粗的问题</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var ctx = document.getElementById(&apos;scroll_canvas&apos;).getContext(&apos;2d&apos;);</span><br><span class="line">ctx.translate(0.5,0.5);</span><br></pre></td></tr></table></figure>
+<h3 id="22-整屏滚动"><a href="#22-整屏滚动" class="headerlink" title="22. 整屏滚动"></a>22. 整屏滚动</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">jquery.fullPage.min.js 这个插件可以实现一屏一屏的滚动</span><br></pre></td></tr></table></figure>
+<h3 id="23-滚动停止监听方法"><a href="#23-滚动停止监听方法" class="headerlink" title="23. 滚动停止监听方法"></a>23. 滚动停止监听方法</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">var timer;</span><br><span class="line"></span><br><span class="line">window.onscroll=function()&#123;</span><br><span class="line">    if(timer)</span><br><span class="line">    clearTimeout(timer)</span><br><span class="line">    </span><br><span class="line">    timer = setTimeout(function()&#123;</span><br><span class="line">        console.log(&apos;scrolling ends..&apos;)</span><br><span class="line">        //TODO some codes here</span><br><span class="line">    &#125;,1000)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="24-隐藏滚动条"><a href="#24-隐藏滚动条" class="headerlink" title="24. 隐藏滚动条"></a>24. 隐藏滚动条</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">.class::-webkit-scrollbar &#123;</span><br><span class="line">    background: transparent;</span><br><span class="line">    width: 0px;</span><br><span class="line">    height: 0;</span><br><span class="line">&#125;</span><br><span class="line">// https://segmentfault.com/q/1010000000204586</span><br></pre></td></tr></table></figure>
+<h3 id="25-对象深拷贝"><a href="#25-对象深拷贝" class="headerlink" title="25. 对象深拷贝"></a>25. 对象深拷贝</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">function deepCopy(source) &#123; </span><br><span class="line">    var result = &#123;&#125;;</span><br><span class="line">    for (var key in source) &#123;</span><br><span class="line">        result[key] = typeof source[key] === &apos;object&apos;? deepCopy(source[key]): source[key];</span><br><span class="line">    &#125; </span><br><span class="line">    return result; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="26-sel查找控件"><a href="#26-sel查找控件" class="headerlink" title="26. sel查找控件"></a>26. sel查找控件</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;input type=&quot;range&quot; min=&quot;10&quot; max=&quot;1000&quot; step=&quot;10&quot; value=&quot;500&quot; data-rangeslider&gt;</span><br><span class="line"></span><br><span class="line">var $document   = $(document);</span><br><span class="line">var selector    = &apos;[data-rangeslider]&apos;;</span><br><span class="line">var $inputRange = $(selector);</span><br></pre></td></tr></table></figure>
+<h3 id="27-将html代码中-lt-img-gt-替换"><a href="#27-将html代码中-lt-img-gt-替换" class="headerlink" title="27. 将html代码中&lt;img&gt;替换"></a>27. 将html代码中<code>&lt;img&gt;</code>替换</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">var text_html = document.getElementById(&apos;saytext&apos;).innerHTML;</span><br><span class="line">text_html = text_html.replace(/&lt;img [^&gt;]*src=[&apos;&quot;]([^&apos;&quot;]+)[^&gt;]*&gt;/gi,function(match, capture)&#123;</span><br><span class="line">var newStr = &apos;[em_&apos; + capture.substring(capture.indexOf(&apos;/&apos;) + 1, capture.indexOf(&apos;.&apos;)) + &apos;]&apos;;</span><br><span class="line">return newStr;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<h3 id="28-输入框文本输入实时监听事件-属性"><a href="#28-输入框文本输入实时监听事件-属性" class="headerlink" title="28. 输入框文本输入实时监听事件-属性"></a>28. 输入框文本输入实时监听事件-属性</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">onpropertychange=&quot;handle();&quot; oninput=&quot;handle();&quot;</span><br></pre></td></tr></table></figure>
+<h3 id="29-判断obj是否是字符串类型"><a href="#29-判断obj是否是字符串类型" class="headerlink" title="29. 判断obj是否是字符串类型"></a>29. 判断obj是否是字符串类型</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">((typeof obj!=&apos;string&apos;)&amp;&amp; obj.constructor!=String)</span><br></pre></td></tr></table></figure>
+<h3 id="30-trim-去除空格"><a href="#30-trim-去除空格" class="headerlink" title="30. trim() 去除空格"></a>30. <code>trim()</code> 去除空格</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">String.prototype.trim = function()&#123;</span><br><span class="line">	return this.replace(/(^\s+)|(\s+$)/g, &quot;&quot;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="31"><a href="#31" class="headerlink" title="31."></a>31.</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">/*</span><br><span class="line">num 要产生多少个随机数</span><br><span class="line">from 产生随机数的最小值</span><br><span class="line">to 产生随机数的最大值</span><br><span class="line">*/</span><br><span class="line"> </span><br><span class="line">function createRandom2(num , from , to)</span><br><span class="line">&#123;</span><br><span class="line">    var arr=[];</span><br><span class="line">    var json=&#123;&#125;;</span><br><span class="line">    while(arr.length&lt;num)</span><br><span class="line">    &#123;</span><br><span class="line">        //产生单个随机数</span><br><span class="line">        var ranNum=Math.ceil(Math.random()*(to-from))+from;</span><br><span class="line">        //通过判断json对象的索引值是否存在 来标记 是否重复</span><br><span class="line">        if(!json[ranNum])</span><br><span class="line">        &#123;</span><br><span class="line">            json[ranNum]=1;</span><br><span class="line">            arr.push(ranNum);</span><br><span class="line">        &#125;</span><br><span class="line">         </span><br><span class="line">    &#125;</span><br><span class="line">    return arr;</span><br><span class="line">     </span><br><span class="line">     </span><br><span class="line">&#125;</span><br><span class="line">alert(createRandom2(10,0,50));//生成10个从0-50之间不重复的随机数</span><br></pre></td></tr></table></figure>
+<h3 id="32-图片懒加载—只加载可视区域图片"><a href="#32-图片懒加载—只加载可视区域图片" class="headerlink" title="32. 图片懒加载—只加载可视区域图片"></a>32. 图片懒加载—只加载可视区域图片</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line">var aImages = document.images; //获取id为SB的文档内所有的图片</span><br><span class="line">loadImg(aImages);</span><br><span class="line">window.onscroll = function() &#123; //滚动条滚动触发</span><br><span class="line">    loadImg(aImages);</span><br><span class="line">&#125;;</span><br><span class="line">//getBoundingClientRect 是图片懒加载的核心</span><br><span class="line">function loadImg(arr) &#123;</span><br><span class="line">    for(var i = 0, len = arr.length; i &lt; len; i++) &#123;</span><br><span class="line">        if(arr[i].getBoundingClientRect().top &lt; document.documentElement.clientHeight &amp;&amp; !arr[i].isLoad) &#123;</span><br><span class="line">            arr[i].isLoad = true; //图片显示标志位</span><br><span class="line">            //arr[i].style.cssText = &quot;opacity: 0;&quot;;</span><br><span class="line">            (function(i) &#123;</span><br><span class="line">                setTimeout(function() &#123;</span><br><span class="line">                    if(arr[i].dataset) &#123; //兼容不支持data的浏览器</span><br><span class="line">                        aftLoadImg(arr[i], arr[i].dataset.imgurl);</span><br><span class="line">                    &#125; else &#123;</span><br><span class="line">                        aftLoadImg(arr[i], arr[i].getAttribute(&quot;data-imgurl&quot;));</span><br><span class="line">                    &#125;</span><br><span class="line">                    arr[i].style.cssText = &quot;transition: 1s; opacity: 1;&quot; //相当于fadein</span><br><span class="line">                &#125;, 500)</span><br><span class="line">            &#125;)(i);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">function aftLoadImg(obj, url) &#123;</span><br><span class="line">    var oImg = new Image();</span><br><span class="line">    oImg.onload = function() &#123;</span><br><span class="line">        obj.src = oImg.src; //下载完成后将该图片赋给目标obj目标对象</span><br><span class="line">    &#125;</span><br><span class="line">    oImg.src = url; //oImg对象先下载该图像</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="33-transform-left-50-top-50-居中"><a href="#33-transform-left-50-top-50-居中" class="headerlink" title="33. transform left 50% top 50% 居中"></a>33. <code>transform left 50% top 50%</code> 居中</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">-webkit-transform: translate(-50%, -50%);</span><br><span class="line">-moz-transform: translate(-50%, -50%);</span><br><span class="line">-ms-transform: translate(-50%, -50%);</span><br><span class="line">-o-transform: translate(-50%, -50%);</span><br><span class="line">transform: translate(-50%, -50%);</span><br></pre></td></tr></table></figure>
+<h3 id="34-input-type-number-右侧会有上下箭头"><a href="#34-input-type-number-右侧会有上下箭头" class="headerlink" title="34. input type=number 右侧会有上下箭头"></a>34. <code>input type=number</code> 右侧会有上下箭头</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">input::-webkit-outer-spin-button, input::-webkit-inner-spin-button&#123;-webkit-appearance: none;&#125;</span><br><span class="line">input[type=&apos;number&apos;]&#123;-moz-appearance: textfield;&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="35-iframe-加载完毕-再执行"><a href="#35-iframe-加载完毕-再执行" class="headerlink" title="35. iframe 加载完毕 再执行"></a>35. <code>iframe</code> 加载完毕 再执行</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">$(document).ready(function(e)&#123;    </span><br><span class="line">	var iframe = document.getElementById(&quot;online_intro&quot;);      </span><br><span class="line">    if (iframe.attachEvent) &#123;</span><br><span class="line">        iframe.attachEvent(&quot;onload&quot;, function() &#123;      </span><br><span class="line">            //iframe加载完成后你需要进行的操作</span><br><span class="line">            iframe_load = true;</span><br><span class="line">            if (room_load) &#123;</span><br><span class="line">            	send_room_info();</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;);      </span><br><span class="line">    &#125; else &#123;      </span><br><span class="line">        iframe.onload = function() &#123;      </span><br><span class="line">            //iframe加载完成后你需要进行的操作</span><br><span class="line">            iframe_load = true;  </span><br><span class="line">            if (room_load) &#123;</span><br><span class="line">            	send_room_info();</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;;      </span><br><span class="line">    &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<h3 id="36-replace-全部替换"><a href="#36-replace-全部替换" class="headerlink" title="36. replace 全部替换"></a>36. <code>replace</code> 全部替换</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var reg = new RegExp(&quot;,&quot;,&quot;g&quot;);//g,表示全部替换。</span><br><span class="line">a.replace(reg,&quot;-&quot;);</span><br></pre></td></tr></table></figure>
+<h3 id="37-数组去重"><a href="#37-数组去重" class="headerlink" title="37. 数组去重"></a>37. 数组去重</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">Array.prototype.unique = function()&#123;</span><br><span class="line">    var res = [];</span><br><span class="line">    var json = &#123;&#125;;</span><br><span class="line">    for(var i = 0; i &lt; this.length; i++)&#123;</span><br><span class="line">        if(!json[this[i]])&#123;</span><br><span class="line">            res.push(this[i]);</span><br><span class="line">            json[this[i]] = 1;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    return res;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="38-css清除浮动的方法"><a href="#38-css清除浮动的方法" class="headerlink" title="38. css清除浮动的方法"></a>38. css清除浮动的方法</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">.clearfix:before, .clearfix:after &#123;</span><br><span class="line">    content: &quot; &quot;;</span><br><span class="line">    display: table;</span><br><span class="line">&#125;</span><br><span class="line">.clearfix:after &#123;clear: both;&#125;</span><br><span class="line">.clearfix: &#123;zoom: 1&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="39-弹框点击空白区域隐藏"><a href="#39-弹框点击空白区域隐藏" class="headerlink" title="39. 弹框点击空白区域隐藏"></a>39. 弹框点击空白区域隐藏</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">document.onmousedown = function(ev)&#123;</span><br><span class="line">    var ev = ev || window.event;</span><br><span class="line">    ev = $(ev.target);</span><br><span class="line">    if(ev.attr(&apos;class&apos;) == &apos;alert&apos;)&#123;</span><br><span class="line">        ev.hide();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="40-遇到h5页面图片点击自动放大的问题"><a href="#40-遇到h5页面图片点击自动放大的问题" class="headerlink" title="40. 遇到h5页面图片点击自动放大的问题"></a>40. 遇到h5页面图片点击自动放大的问题</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pointer-events: none;</span><br></pre></td></tr></table></figure>
+<h3 id="41-弹框点击空白区域隐藏"><a href="#41-弹框点击空白区域隐藏" class="headerlink" title="41. 弹框点击空白区域隐藏"></a>41. 弹框点击空白区域隐藏</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">// 弹框点击空白区域隐藏</span><br><span class="line">document.ontouchend = function(ev)&#123;</span><br><span class="line">    var ev = ev || window.event;</span><br><span class="line">    ev = $(ev.target);</span><br><span class="line">    if(ev.attr(&apos;itemprop&apos;) == &apos;contentUrl&apos;)&#123;</span><br><span class="line">        ev.stopPropagation();</span><br><span class="line">    &#125;    </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="42-canvas-将两张图片合并"><a href="#42-canvas-将两张图片合并" class="headerlink" title="42. canvas 将两张图片合并"></a>42. <code>canvas</code> 将两张图片合并</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line">function drawMyCanvas(code)&#123;</span><br><span class="line">        var canvas = document.getElementById(&quot;myCanvas&quot;);</span><br><span class="line">        var context = canvas.getContext(&quot;2d&quot;);</span><br><span class="line">        var myImage = new Image();</span><br><span class="line">        myImage.src = &apos;img/background.png&apos;;</span><br><span class="line">        myImage.crossOrigin = &apos;Anonymous&apos;;</span><br><span class="line">        myImage.onload = function()&#123;</span><br><span class="line">            context.drawImage(myImage, 0, 0, 640, 1136);</span><br><span class="line">            // draw 文本</span><br><span class="line">            context.font = &quot;26px Arial&quot;;</span><br><span class="line">            context.fillStyle = &apos;#fd6265&apos;;</span><br><span class="line">            context.fillText(code, 355, 378);</span><br><span class="line"></span><br><span class="line">            var imgUri = canvas.toDataURL(&quot;image/png&quot;); // 获取生成的图片的url</span><br><span class="line">            $(&apos;#myImg&apos;).attr(&apos;src&apos;, imgUri);</span><br><span class="line">            //$(&apos;#myImg&apos;).parent().attr(&#123;&apos;href&apos;: imgUri, download: &apos;hyb_four_anni&apos;&#125;);</span><br><span class="line">            return;</span><br><span class="line">            // 生成一个a元素</span><br><span class="line">            var a = document.createElement(&apos;a&apos;);</span><br><span class="line">            // 将a的download属性设置为我们想要下载的图片名称，若name不存在则使用‘下载图片名称’作为默认名称</span><br><span class="line">            a.download = &apos;hyb_four_anni.png&apos;;</span><br><span class="line">            // 将生成的URL设置为a.href属性</span><br><span class="line">            a.href = imgUri;</span><br><span class="line">            // 创建一个单击事件</span><br><span class="line">            var event = document.createEvent(&apos;MouseEvents&apos;);//new TouchEvent(&apos;click&apos;);</span><br><span class="line">            //event.initMouseEvent(&apos;click&apos;);</span><br><span class="line">            event.initMouseEvent(&apos;click&apos;,true,false,window,0,0,0,0,0,false,false,false,false,0,null);</span><br><span class="line">            // 触发a的单击事件</span><br><span class="line">            a.dispatchEvent(event);</span><br><span class="line">        &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="43-上传base64图片"><a href="#43-上传base64图片" class="headerlink" title="43. 上传base64图片"></a>43. 上传base64图片</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br></pre></td><td class="code"><pre><span class="line">首先获取base64图片&lt;img&gt;</span><br><span class="line">/** </span><br><span class="line">    * 根据base64 内容 取得 bolb </span><br><span class="line">    * </span><br><span class="line">    * @param dataURI </span><br><span class="line">    * @returns Blob </span><br><span class="line">    */</span><br><span class="line">    function getBlobBydataURI(dataURI,type) &#123; </span><br><span class="line">        var binary = atob(dataURI.split(&apos;,&apos;)[1]); </span><br><span class="line">        var array = []; </span><br><span class="line">        for(var i = 0; i &lt; binary.length; i++) &#123; </span><br><span class="line">        array.push(binary.charCodeAt(i)); </span><br><span class="line">        &#125; </span><br><span class="line">        return new Blob([new Uint8Array(array)], &#123;type:type &#125;); </span><br><span class="line">    &#125; </span><br><span class="line"></span><br><span class="line">function downloadImg()&#123;</span><br><span class="line">        //base64 转 blob </span><br><span class="line">        var $Blob= getBlobBydataURI(document.getElementsByTagName(&quot;img&quot;)[0].src,&apos;image/png&apos;); </span><br><span class="line">        var formData = new FormData(); </span><br><span class="line">        formData.append(&quot;files&quot;, $Blob ,&quot;file_&quot;+Date.parse(new Date())+&quot;.png&quot;); </span><br><span class="line"></span><br><span class="line">        $.ajax(&#123;</span><br><span class="line">            url:&apos;/api/image/upload?uid=123&apos;,</span><br><span class="line">            type:&apos;post&apos;,</span><br><span class="line">            data:formData,</span><br><span class="line">            async: true,</span><br><span class="line">            crossDomain: true,</span><br><span class="line">            contentType: false,</span><br><span class="line">            processData: false,</span><br><span class="line">            success:function(data)&#123;</span><br><span class="line">                console.log(data);</span><br><span class="line">            &#125;,</span><br><span class="line">            error:function(error)&#123;</span><br><span class="line">                console.log(error);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;)</span><br><span class="line"></span><br><span class="line">        return;</span><br><span class="line"></span><br><span class="line">        //组建XMLHttpRequest 上传文件 </span><br><span class="line">        var request = new XMLHttpRequest(); </span><br><span class="line">        //上传连接地址 </span><br><span class="line">        request.open(&quot;POST&quot;, &quot;/api/image/upload?uid=123&quot;); </span><br><span class="line">        request.onreadystatechange = function() &#123; </span><br><span class="line">            if (request.readyState == 4) </span><br><span class="line">            &#123; </span><br><span class="line">                if(request.status == 200)&#123; </span><br><span class="line">                    console.log(&quot;上传成功&quot;); </span><br><span class="line">                &#125;else&#123; </span><br><span class="line">                    console.log(&quot;上传失败,检查上传地址是否正确&quot;); </span><br><span class="line">                &#125; </span><br><span class="line">            &#125; </span><br><span class="line">        &#125; </span><br><span class="line">        request.send(formData); </span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+<h3 id="44-获取元素定位"><a href="#44-获取元素定位" class="headerlink" title="44. 获取元素定位"></a>44. 获取元素定位</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">var input = document.getElementById(&apos;J_MyInput&apos;); // 根据ID取得元素对象</span><br><span class="line">var sizeObj = input.getBoundingClientRect(); // 取得元素距离窗口的绝对位置</span><br><span class="line">// 窗口的滚动偏移（垂直、水平）</span><br><span class="line">var bodyOffset = &#123;top: document.body.scrollTop, left: document.body.scrollLeft&#125;;</span><br><span class="line"> </span><br><span class="line">// 元素相对于页面的绝对位置 = 窗口滚动偏移 + 元素相对于窗口的绝对位置</span><br><span class="line">var inputOffsetTop = sizeObj.top + bodyOffset.top; // 距顶部</span><br><span class="line">var inputOffsetLeft = sizeObj.left + bodyOffset.left; // 距左侧</span><br></pre></td></tr></table></figure>
+<h3 id="45-h5字体变细"><a href="#45-h5字体变细" class="headerlink" title="45. h5字体变细"></a>45. h5字体变细</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">font-family: \\5FAE\8F6F\96C5\9ED1,Tahoma,Helvetica,Arial,\\5B8B\4F53,sans-serif;</span><br><span class="line">-moz-font-feature-settings: &quot;kern&quot;;</span><br><span class="line">-webkit-font-smoothing: antialiased;</span><br><span class="line">-moz-osx-font-smoothing: grayscale;</span><br></pre></td></tr></table></figure>
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>坚持原创技术分享，您的支持将鼓励我继续创作！</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wechatpay.png" alt="夜雨寒 微信支付">
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/alipay.png" alt="夜雨寒 支付宝">
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/H5笔记/" rel="tag"># H5笔记</a>
+          
+        </div>
+      
+
+      
+      
+        <div class="post-widgets">
+        
+
+        
+
+        
+          
+          <div class="social_share">
+            
+            
+               <div id="needsharebutton-postbottom">
+                 <span class="btn">
+                    <i class="fa fa-share-alt" aria-hidden="true"></i>
+                 </span>
+               </div>
+            
+          </div>
+        
+        </div>
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/01/11/Nodejs/webpack学习/" rel="next" title="webpack学习">
+                <i class="fa fa-chevron-left"></i> webpack学习
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/02/16/阿里云/阿里云部署git-检出代码/" rel="prev" title="阿里云部署git-检出代码">
+                阿里云部署git-检出代码 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+  </div>
+
+
+          </div>
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="/images/head.png" alt="夜雨寒">
+            
+              <p class="site-author-name" itemprop="name">夜雨寒</p>
+              <p class="site-description motion-element" itemprop="description">我的微信公众号：夜雨寒l，技术博客，iOS开发，HTML5，NodeJS学习</p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">32</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/categories/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">9</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">36</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+            <div class="links-of-author motion-element">
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://github.com/gxbxgithub" title="GitHub &rarr; https://github.com/gxbxgithub" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://www.jianshu.com/u/46ae5ab6420e" title="简书 &rarr; https://www.jianshu.com/u/46ae5ab6420e" rel="noopener" target="_blank"><i class="fa fa-fw fa-book"></i>简书</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://weibo.com/p/1005055104640336" title="微博 &rarr; https://weibo.com/p/1005055104640336" rel="noopener" target="_blank"><i class="fa fa-fw fa-weibo"></i>微博</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://www.zhihu.com/people/carybob" title="知乎 &rarr; https://www.zhihu.com/people/carybob" rel="noopener" target="_blank"><i class="fa fa-fw fa-book"></i>知乎</a>
+                </span>
+              
+            </div>
+          
+
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </div>
+
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-li-撑不起ul-可以在ul最下面添加如下代码"><span class="nav-number">1.</span> <span class="nav-text">1. li 撑不起ul 可以在ul最下面添加如下代码</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-浏览器兼容"><span class="nav-number">2.</span> <span class="nav-text">2. 浏览器兼容</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-移动端css—加上如下代码"><span class="nav-number">3.</span> <span class="nav-text">3. 移动端css—加上如下代码</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-文本显示不全，后面显示…"><span class="nav-number">4.</span> <span class="nav-text">4. 文本显示不全，后面显示…</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-百分比-px"><span class="nav-number">5.</span> <span class="nav-text">5. 百分比-px</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-文本太长省略。。。"><span class="nav-number">6.</span> <span class="nav-text">6. 文本太长省略。。。</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7-textarea-高度随文本变化"><span class="nav-number">7.</span> <span class="nav-text">7. textarea 高度随文本变化</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#8-手机端打开h5页面，点击a标签会有阴影的问题"><span class="nav-number">8.</span> <span class="nav-text">8. 手机端打开h5页面，点击a标签会有阴影的问题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#9-模糊-【毛玻璃】"><span class="nav-number">9.</span> <span class="nav-text">9. 模糊 -【毛玻璃】</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#10-修复H5-Button-颜色异常问题"><span class="nav-number">10.</span> <span class="nav-text">10. 修复H5 Button 颜色异常问题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#11-获取url后面的参数值"><span class="nav-number">11.</span> <span class="nav-text">11. 获取url后面的参数值</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#12-获取第几个到第几个元素"><span class="nav-number">12.</span> <span class="nav-text">12. 获取第几个到第几个元素</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#13-渐变"><span class="nav-number">13.</span> <span class="nav-text">13. 渐变</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#14-置顶"><span class="nav-number">14.</span> <span class="nav-text">14. 置顶</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#15-document-on-在Safari浏览器不能用的问题解决方案"><span class="nav-number">15.</span> <span class="nav-text">15. $(document).on()在Safari浏览器不能用的问题解决方案</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#16-Safari浏览器点击数字自动拨打电话"><span class="nav-number">16.</span> <span class="nav-text">16. Safari浏览器点击数字自动拨打电话</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#17-引入自定义字体"><span class="nav-number">17.</span> <span class="nav-text">17. 引入自定义字体</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#18-与客户端交互"><span class="nav-number">18.</span> <span class="nav-text">18. 与客户端交互</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#19-jquery-拷贝数组"><span class="nav-number">19.</span> <span class="nav-text">19. jquery 拷贝数组</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#20-透明度"><span class="nav-number">20.</span> <span class="nav-text">20. 透明度</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#21-中心平移法解决划线粗的问题"><span class="nav-number">21.</span> <span class="nav-text">21. 中心平移法解决划线粗的问题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#22-整屏滚动"><span class="nav-number">22.</span> <span class="nav-text">22. 整屏滚动</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#23-滚动停止监听方法"><span class="nav-number">23.</span> <span class="nav-text">23. 滚动停止监听方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#24-隐藏滚动条"><span class="nav-number">24.</span> <span class="nav-text">24. 隐藏滚动条</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#25-对象深拷贝"><span class="nav-number">25.</span> <span class="nav-text">25. 对象深拷贝</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#26-sel查找控件"><span class="nav-number">26.</span> <span class="nav-text">26. sel查找控件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#27-将html代码中-lt-img-gt-替换"><span class="nav-number">27.</span> <span class="nav-text">27. 将html代码中&lt;img&gt;替换</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#28-输入框文本输入实时监听事件-属性"><span class="nav-number">28.</span> <span class="nav-text">28. 输入框文本输入实时监听事件-属性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#29-判断obj是否是字符串类型"><span class="nav-number">29.</span> <span class="nav-text">29. 判断obj是否是字符串类型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#30-trim-去除空格"><span class="nav-number">30.</span> <span class="nav-text">30. trim() 去除空格</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#31"><span class="nav-number">31.</span> <span class="nav-text">31.</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#32-图片懒加载—只加载可视区域图片"><span class="nav-number">32.</span> <span class="nav-text">32. 图片懒加载—只加载可视区域图片</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#33-transform-left-50-top-50-居中"><span class="nav-number">33.</span> <span class="nav-text">33. transform left 50% top 50% 居中</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#34-input-type-number-右侧会有上下箭头"><span class="nav-number">34.</span> <span class="nav-text">34. input type=number 右侧会有上下箭头</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#35-iframe-加载完毕-再执行"><span class="nav-number">35.</span> <span class="nav-text">35. iframe 加载完毕 再执行</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#36-replace-全部替换"><span class="nav-number">36.</span> <span class="nav-text">36. replace 全部替换</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#37-数组去重"><span class="nav-number">37.</span> <span class="nav-text">37. 数组去重</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#38-css清除浮动的方法"><span class="nav-number">38.</span> <span class="nav-text">38. css清除浮动的方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#39-弹框点击空白区域隐藏"><span class="nav-number">39.</span> <span class="nav-text">39. 弹框点击空白区域隐藏</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#40-遇到h5页面图片点击自动放大的问题"><span class="nav-number">40.</span> <span class="nav-text">40. 遇到h5页面图片点击自动放大的问题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#41-弹框点击空白区域隐藏"><span class="nav-number">41.</span> <span class="nav-text">41. 弹框点击空白区域隐藏</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#42-canvas-将两张图片合并"><span class="nav-number">42.</span> <span class="nav-text">42. canvas 将两张图片合并</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#43-上传base64图片"><span class="nav-number">43.</span> <span class="nav-text">43. 上传base64图片</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#44-获取元素定位"><span class="nav-number">44.</span> <span class="nav-text">44. 获取元素定位</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#45-h5字体变细"><span class="nav-number">45.</span> <span class="nav-text">45. h5字体变细</span></a></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
+      
+
+      
+
+      
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">  <a href="http://www.beian.miit.gov.cn/" rel="noopener" target="_blank">京ICP备18006757号-1 </a>&copy; <span itemprop="copyrightYear">2021</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">夜雨寒の博客</span>
+
+  
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v3.8.0</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> v6.6.0</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+          <span id="scrollpercent"><span>0</span>%</span>
+        
+      </div>
+    
+
+    
+      <div id="needsharebutton-float">
+        <span class="btn">
+          <i class="fa fa-share-alt" aria-hidden="true"></i>
+        </span>
+      </div>
+    
+
+    
+
+    
+
+    
+  </div>
+
+  
+
+<script>
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+
+  
+
+
+  <script src="/js/src/utils.js?v=6.6.0"></script>
+
+  <script src="/js/src/motion.js?v=6.6.0"></script>
+
+
+
+  
+  
+
+
+  <script src="/js/src/affix.js?v=6.6.0"></script>
+
+  <script src="/js/src/schemes/pisces.js?v=6.6.0"></script>
+
+
+
+  
+  <script src="/js/src/scrollspy.js?v=6.6.0"></script>
+<script src="/js/src/post-details.js?v=6.6.0"></script>
+
+
+
+  
+
+
+  <script src="/js/src/bootstrap.js?v=6.6.0"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  <script>
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+  
+  <script src="/lib/needsharebutton/needsharebutton.js"></script>
+
+  <script>
+    
+      pbOptions = {};
+      
+          pbOptions.iconStyle = "default";
+      
+          pbOptions.boxForm = "horizontal";
+      
+          pbOptions.position = "bottomCenter";
+      
+          pbOptions.networks = "Weibo,Wechat,QQZone,Douban,Twitter,Facebook";
+      
+      new needShareButton('#needsharebutton-postbottom', pbOptions);
+    
+    
+      flOptions = {};
+      
+          flOptions.iconStyle = "default";
+      
+          flOptions.boxForm = "vertical";
+      
+          flOptions.position = "middleRight";
+      
+          flOptions.networks = "Weibo,Wechat,QQZone,Douban,Twitter,Facebook";
+      
+      new needShareButton('#needsharebutton-float', flOptions);
+    
+  </script>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
